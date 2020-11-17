@@ -4,7 +4,6 @@
 @import 'global';
 .header {
     padding: 50px 0;
-    @extend %rubik-medium;
     &__inner {
         display: flex;
         justify-content: space-between;
