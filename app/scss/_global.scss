@@ -12,6 +12,13 @@ body {
     flex-direction: column;
 }
 
+button {
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+    outline: 1px solid transparent;
+}
+
 .main {
     flex-grow: 1;
 }

@@ -60,20 +60,21 @@
         background-color: $bg-color;
         padding: 13px 16px;
         border: none;
+        font-size: 12px;
         line-height: 1;
         &::placeholder {
             color: #234969;
-            font-size: 12px;
         }
     }
     &__btn {
         padding: 14px 15px;
-        border: none;
         background-color: $btn-color;
         @extend %dmsans-regular;
         line-height: 1;
         color: #fff;
-        cursor: pointer;
+        &:hover {
+            background-color: #80a1b3;
+        }
     }
     &__bottom {
         padding: 35px 0 40px;
@@ -82,20 +83,20 @@
     }
     &__nav {
         display: flex;
-    }
-    &__nav-item {
-        position: relative;
-    }
-    &__nav-item:not(:last-child) {
-        margin-right: 30px;
-    }
-    &__nav-item:not(:last-child)::after {
-        position: absolute;
-        content: '';
-        width: 2px;
-        height: 17px;
-        background-color: #7b7b7b;
-        top: 3px;
-        right: -15px;
+        &-item {
+            position: relative;
+        }
+        &-item:not(:last-child) {
+            margin-right: 30px;
+        }
+        &-item:not(:last-child)::after {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 17px;
+            background-color: #7b7b7b;
+            top: 5px;
+            right: -15px;
+        }
     }
 }

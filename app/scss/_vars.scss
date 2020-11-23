@@ -4,8 +4,6 @@ $btn-color: #a3bbc8;
 $title-color: #1a1a1a;
 $post-date: #222933;
 $body-color: #fff;
-$service-title: #414141;
-$service-subtitle: #585858;
 %rubik-regular {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -34,4 +32,10 @@ $service-subtitle: #585858;
 %poppins-bold {
     font-family: "Poppins"sans-serif;
     font-weight: 700;
+}
+
+%btn-param {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
