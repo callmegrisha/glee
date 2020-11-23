@@ -6,10 +6,17 @@ body {
 body {
     @extend %rubik-medium;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 2;
     color: #7b7b7b;
     display: flex;
     flex-direction: column;
+}
+
+button {
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+    outline: 1px solid transparent;
 }
 
 .main {
@@ -20,10 +27,9 @@ body {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    &--small {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }
