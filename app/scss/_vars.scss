@@ -1,30 +1,37 @@
-$title-color: #243f4d;
+$title-slider: #243f4d;
+$bg-color: #fef7f0;
+$btn-color: #a3bbc8;
+$title-color: #1a1a1a;
+$post-date: #222933;
+$body-color: #fff;
+$service-title: #414141;
+$service-subtitle: #585858;
 %rubik-regular {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
 }
 
 %rubik-medium {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
 }
 
 %dmsans-regular {
-    font-family: "DMSans";
+    font-family: "DMSans", sans-serif;
     font-weight: 400;
 }
 
 %dmsans-medium {
-    font-family: "DMSans";
+    font-family: "DMSans", sans-serif;
     font-weight: 500;
 }
 
 %dmsans-bold {
-    font-family: "DMSans";
+    font-family: "DMSans", sans-serif;
     font-weight: 700;
 }
 
 %poppins-bold {
-    font-family: "Poppins";
+    font-family: "Poppins"sans-serif;
     font-weight: 700;
 }

@@ -1,0 +1,101 @@
+.footer {
+    padding: 80px 0 40px;
+    @extend %rubik-regular;
+    & a {
+        color: #7b7b7b;
+    }
+    &__top {
+        display: flex;
+        padding-bottom: 75px;
+        border-bottom: 1px solid #dae4e9;
+    }
+    &__item--contacts {
+        max-width: 200px;
+        margin-right: 100px;
+    }
+    &__item--services {
+        max-width: 120px;
+        margin-right: 200px;
+    }
+    &__item--account {
+        max-width: 100px;
+        margin-right: 170px;
+    }
+    &__item--form {
+        max-width: 270px;
+    }
+    &__logo,
+    &__title {
+        display: block;
+        margin-bottom: 25px;
+    }
+    &__contacts,
+    &__contacts a {
+        font-style: normal;
+    }
+    &__contacts p:not(:last-child),
+    &__list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    &__contacts span,
+    &__title {
+        text-transform: uppercase;
+    }
+    &__title {
+        padding-top: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+    }
+    &__list-item {
+        line-height: 32px;
+    }
+    &__text {
+        margin-bottom: 35px;
+    }
+    &__input {
+        max-width: 170px;
+        width: 100%;
+        background-color: $bg-color;
+        padding: 13px 16px;
+        border: none;
+        line-height: 1;
+        &::placeholder {
+            color: #234969;
+            font-size: 12px;
+        }
+    }
+    &__btn {
+        padding: 14px 15px;
+        border: none;
+        background-color: $btn-color;
+        @extend %dmsans-regular;
+        line-height: 1;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__bottom {
+        padding: 35px 0 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+    }
+    &__nav-item {
+        position: relative;
+    }
+    &__nav-item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__nav-item:not(:last-child)::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 17px;
+        background-color: #7b7b7b;
+        top: 3px;
+        right: -15px;
+    }
+}
