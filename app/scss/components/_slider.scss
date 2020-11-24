@@ -1,0 +1,48 @@
+.slider {
+    @extend %rubik-medium;
+    &__item {
+        padding: 220px 0 280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    &__title {
+        max-width: 420px;
+        text-transform: uppercase;
+        color: $title-slider;
+        font-size: 72px;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        max-width: 370px;
+        @extend %rubik-regular;
+        color: #436372;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        position: relative;
+        padding: 20px 110px 20px 25px;
+        background-color: $btn-color;
+        font-size: 15px;
+        line-height: 1;
+        color: $body-color;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrow-right.svg');
+            width: 22px;
+            height: 9px;
+            right: 19px;
+            top: 25px;
+        }
+        &:hover {
+            background-color: #80a1b3;
+        }
+    }
+}
