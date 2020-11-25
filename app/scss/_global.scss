@@ -34,3 +34,11 @@ button {
         padding: 0 15px;
     }
 }
+
+.title {
+    color: $title-color;
+    @extend %dmsans-bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
