@@ -1,16 +1,21 @@
 .products {
     padding: 70px 0 130px;
     &__cell {
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         margin-bottom: 40px;
-        &:not(:nth-child(4n+4)) {
-            margin-right: 30px;
-        }
+        padding: 40px 30px 40px;
         max-width: 270px;
         width: 100%;
         text-align: center;
-        &-img {
-            object-fit: cover;
-            margin: 0 auto 70px;
+        &:not(:nth-child(4n+4)) {
+            margin-right: 30px;
+        }
+        .product__cell-img {
+            height: 195px;
+            margin-bottom: 70px;
+            img {
+                margin: 0 auto;
+            }
         }
         &-title {
             @extend %dmsans-medium;
@@ -24,12 +29,13 @@
             color: $btn-color;
             font-size: 16px;
             line-height: 1.3;
+            position: relative;
         }
     }
     &__items {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
