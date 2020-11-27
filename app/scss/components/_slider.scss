@@ -39,11 +39,7 @@
         &::after {
             position: absolute;
             content: '';
-            background-image: url('../../images/arrow-right.svg');
-            width: 22px;
-            height: 9px;
-            right: 19px;
-            top: 25px;
+            @extend %arrow-right;
         }
         &:hover {
             background-color: #80a1b3;
