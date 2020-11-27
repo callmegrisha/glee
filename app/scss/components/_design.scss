@@ -1,0 +1,33 @@
+.design {
+    padding: 100px 0;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__cell {
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-color: #f8f8f8;
+        background-position: 17vh 12vh;
+        max-width: 370px;
+        width: 100%;
+        min-height: 250px;
+        padding: 40px 0 30px 30px;
+        @extend %dmsans-bold;
+        &:not(:nth-child(3n+3)) {
+            margin-right: 30px;
+        }
+        &-title {
+            max-width: 180px;
+            font-size: 20px;
+            line-height: 1.2;
+            color: $title-color;
+            margin-bottom: 15px;
+        }
+        &-subtitle {
+            color: $btn-color;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+    }
+}

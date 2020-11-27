@@ -1,7 +1,7 @@
-$title-slider: #243f4d;
+$accent-color: #243f4d;
 $bg-color: #fef7f0;
 $btn-color: #a3bbc8;
-$title-color: #1a1a1a;
+$title-color: #191919;
 $post-date: #222933;
 $body-color: #fff;
 %rubik-regular {
@@ -38,4 +38,13 @@ $body-color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+%arrow-right {
+    background-image: url('../../images/arrow-right.svg');
+    width: 22px;
+    height: 9px;
+    right: 19px;
+    top: 25px;
+    fill: #436372;
 }
