@@ -9,20 +9,29 @@
         padding-bottom: 75px;
         border-bottom: 1px solid #dae4e9;
     }
-    &__item--contacts {
-        max-width: 200px;
-        margin-right: 100px;
+    &__item {
+        &--contacts {
+            max-width: 200px;
+            margin-right: 100px;
+        }
+        &--services {
+            max-width: 120px;
+            margin-right: 200px;
+        }
+        &--account {
+            max-width: 100px;
+            margin-right: 170px;
+        }
+        &--form {
+            max-width: 270px;
+        }
     }
-    &__item--services {
-        max-width: 120px;
-        margin-right: 200px;
-    }
-    &__item--account {
-        max-width: 100px;
-        margin-right: 170px;
-    }
-    &__item--form {
-        max-width: 270px;
+    &__list {
+        &-link {
+            &:hover {
+                border-bottom: 1px solid #7b7b7b;
+            }
+        }
     }
     &__logo,
     &__title {
@@ -62,6 +71,7 @@
         border: none;
         font-size: 12px;
         line-height: 1;
+        outline: transparent;
         &::placeholder {
             color: #234969;
         }
@@ -97,6 +107,11 @@
             background-color: #7b7b7b;
             top: 5px;
             right: -15px;
+        }
+        &-link {
+            &:hover {
+                border-bottom: 1px solid #7b7b7b;
+            }
         }
     }
 }

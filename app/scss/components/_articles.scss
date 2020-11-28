@@ -8,6 +8,23 @@
     &__title {
         margin-bottom: 50px;
     }
+    &__more {
+        @extend %dmsans-bold;
+        font-size: 16px;
+        line-height: 1;
+        color: #262626;
+        padding-right: 25px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrow-triangle.svg');
+            background-repeat: no-repeat;
+            width: 7px;
+            height: 12px;
+            right: 0;
+        }
+    }
     &__items {
         display: flex;
         flex-wrap: wrap;
@@ -37,6 +54,9 @@
         line-height: 1;
         background-color: $btn-color;
         border-radius: 25px;
+        &:hover {
+            background-color: #80a1b3;
+        }
     }
     &__subtitle {
         display: block;
