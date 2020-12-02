@@ -21,8 +21,6 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -37,7 +35,6 @@ ul[class] {
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
