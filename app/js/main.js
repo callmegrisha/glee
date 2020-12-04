@@ -5,13 +5,15 @@ $(function() {
         dots: true
     });
 
-    $('.tab').on('click', function(e) {
-        e.preventDefault();
-        $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs__content--active');
+    $('.tab').on('click', function() {
+
+        let tabId = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('tab--active');
+        $('.tabs__content').removeClass('tabs__content--active');
 
         $(this).addClass('tab--active');
-        $($(this).attr('href')).addClass('tabs__content--active');
+        $("#" + tabId).addClass('tabs__content--active');
     });
 
 });

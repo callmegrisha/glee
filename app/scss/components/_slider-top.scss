@@ -101,7 +101,7 @@
 
 .advantages {
     margin-top: -58px;
-    height: 170px;
+    min-height: 170px;
     background-color: $bg-color;
     display: flex;
     justify-content: space-around;
@@ -125,7 +125,7 @@
             height: 170px;
             background-color: #e8e4df;
             right: 0;
-            top: 0px;
+            top: 0;
         }
         &--support::before {
             background-image: url('../../images/support.svg');
