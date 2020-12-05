@@ -41,12 +41,27 @@ $body-color: #fff;
 }
 
 %arrow-right {
-    background-image: url('../../images/arrow-right.svg');
+    background-image: url('../images/icons/arrow-right.svg');
     width: 22px;
     height: 9px;
     right: 19px;
     top: 25px;
-    fill: #436372;
+}
+
+%title-limitation {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+%content-limitation {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 @function max($numbers...) {

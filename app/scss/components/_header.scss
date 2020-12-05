@@ -1,14 +1,16 @@
 .header {
-    padding: 50px 0;
+    padding: 50px 0 43px;
     &__inner {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+    }
+    &__logo {
+        margin-right: 28%;
     }
 }
 
 .menu {
     display: flex;
+    margin-right: 19%;
     &__item:not(:last-child) {
         margin-right: 30px;
     }
@@ -26,42 +28,46 @@
 
 .user-nav {
     display: flex;
-    &__search {
+    &__btn {
         @extend %btn-param;
-        background-color: #edf1f4;
-        margin-right: 20px;
         transition: background-color 0.5s;
         &:hover {
-            background-color: #d2e4f1;
+            background-color: #80a1b3;
+        }
+        &--search {
+            background-color: #edf1f4;
+            margin-right: 20px;
+        }
+        &--toggler {
+            background-color: #a3bbc8;
         }
     }
-    &__wish,
-    &__basket {
+    &__doublebtn {
         background-color: #fcd7b6;
         position: relative;
         transition: background-color 0.5s;
         &:hover {
             background-color: #f3c194;
         }
-    }
-    &__wish {
-        padding: 17px 30px 17px 40px;
-        border-radius: 25px 0 0 25px;
-        position: relative;
-        &::after {
-            position: absolute;
-            content: '';
-            width: 1px;
-            height: 32px;
-            background-color: #fde7d3;
-            top: 9px;
-            right: 0;
+        &--wish {
+            padding: 17px 30px 17px 40px;
+            border-radius: 25px 0 0 25px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 32px;
+                background-color: #fde7d3;
+                top: 9px;
+                right: 0;
+            }
         }
-    }
-    &__basket {
-        padding: 17px 40px 17px 30px;
-        border-radius: 0 25px 25px 0;
-        margin-right: 20px;
+        &--basket {
+            padding: 17px 40px 17px 30px;
+            border-radius: 0 25px 25px 0;
+            margin-right: 20px;
+        }
     }
     &__num {
         position: absolute;
@@ -72,13 +78,5 @@
         font-size: 10px;
         color: #243f4d;
         top: 11px;
-    }
-    &__toggler {
-        @extend %btn-param;
-        background-color: #a3bbc8;
-        transition: background-color 0.5s;
-        &:hover {
-            background-color: #80a1b3;
-        }
     }
 }
