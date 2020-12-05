@@ -19,6 +19,7 @@
         line-height: 1.2;
         color: $title-color;
         margin-bottom: 15px;
+        @extend %title-limitation;
     }
     &__subtitle {
         color: $btn-color;

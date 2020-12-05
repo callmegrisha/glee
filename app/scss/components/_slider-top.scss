@@ -19,8 +19,7 @@
         font-size: 72px;
         line-height: 1;
         margin-bottom: 26px;
-        overflow: hidden;
-        line-clamp: 2;
+        @extend %title-limitation;
     }
     &__subtitle {
         max-width: 370px;
@@ -29,6 +28,7 @@
         font-size: 18px;
         line-height: 1.5;
         margin-bottom: 62px;
+        @extend %content-limitation;
     }
     &__btn {
         position: relative;
@@ -49,10 +49,13 @@
     }
     &__img {
         position: relative;
-        z-index: 1;
         padding-top: 60px;
-        max-width: 640px;
-        object-fit: cover;
+        z-index: 1;
+        img {
+            max-width: 640px;
+            height: 260px;
+            object-fit: cover;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -139,11 +142,13 @@
     }
     &__title {
         display: block;
+        max-width: 150px;
         @extend %dmsans-bold;
         font-size: 18px;
         line-height: 1.3;
         color: #414141;
         margin-bottom: 7px;
+        @extend %title-limitation;
     }
     &__text {
         max-width: 220px;
@@ -151,5 +156,6 @@
         font-size: 16px;
         line-height: 1.5;
         color: #585858;
+        @extend %content-limitation;
     }
 }

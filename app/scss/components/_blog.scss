@@ -1,0 +1,25 @@
+.blog {
+    padding: 0 0 90px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        background-color: #f7f0e9;
+        top: 46vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+}

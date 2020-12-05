@@ -6,11 +6,13 @@
     padding: 98px 150px 80px 386px;
     background-color: #feefe2;
     &__img {
-        object-fit: cover;
-        max-width: 230px;
         position: absolute;
         bottom: 85px;
         left: 136px;
+        img {
+            object-fit: cover;
+            max-width: 230px;
+        }
     }
     &__content {
         color: $accent-color;
@@ -22,12 +24,14 @@
         font-size: 26px;
         line-height: 1.2;
         margin-bottom: 19px;
+        @extend %title-limitation;
     }
     &__desc {
         @extend %rubik-regular;
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 30px;
+        @extend %content-limitation;
     }
     &__btn {
         display: inline-block;
