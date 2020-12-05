@@ -52,6 +52,11 @@
     &__text {
         margin-bottom: 41px;
     }
+    &__label {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+    }
     &__input {
         max-width: 170px;
         width: 100%;
