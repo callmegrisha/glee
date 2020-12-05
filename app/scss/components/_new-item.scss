@@ -50,7 +50,7 @@
             position: absolute;
             content: '';
             @extend %arrow-right;
-            background-image: url('../images/arrow-blue.svg');
+            background-image: url('../images/icons/arrow-blue.svg');
         }
         &:hover {
             border-color: #436372;

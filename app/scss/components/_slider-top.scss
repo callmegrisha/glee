@@ -57,7 +57,7 @@
             object-fit: cover;
         }
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             right: -18%;
             top: -36%;
@@ -131,13 +131,13 @@
             top: 0;
         }
         &--support::before {
-            background-image: url('../../images/support.svg');
+            background-image: url('../images/icons/support.svg');
         }
         &--delivery::before {
-            background-image: url('../../images/delivery.svg');
+            background-image: url('../images/icons/delivery.svg');
         }
         &--payment::before {
-            background-image: url('../../images/payment.svg');
+            background-image: url('../images/icons/payment.svg');
         }
     }
     &__title {
