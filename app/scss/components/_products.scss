@@ -1,9 +1,17 @@
 .products {
-    padding: 53px 0 130px;
+    padding: 53px 0 100px;
     &__catalog {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 30px;
         row-gap: 40px;
+        margin-bottom: 180px;
+    }
+}
+
+.new-items {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
     }
 }
