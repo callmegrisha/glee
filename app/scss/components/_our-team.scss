@@ -1,0 +1,85 @@
+.our-team {
+    padding: 120px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__invite {
+        max-width: 310px;
+        width: 100%;
+    }
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+        color: $accent-color;
+    }
+    &__text {
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $accent-color;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        position: relative;
+        display: inline-block;
+        background-color: $btn-color;
+        padding: 18px 60px 18px 18px;
+        border-radius: 10px;
+        @extend %dmsans-medium;
+        color: $body-color;
+        font-size: 15px;
+        line-height: 1.2;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 11px;
+            background-image: url('../images/icons/arrow-right-2.svg');
+            right: 25px;
+            top: 21px;
+        }
+    }
+    &__person {
+        position: relative;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    }
+    &__img {
+        width: 100%;
+        img {
+            max-width: 370px;
+            height: 320px;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        max-width: 325px;
+        width: 100%;
+        background-color: $body-color;
+        display: flex;
+        padding: 20px 30px;
+        position: absolute;
+        bottom: -35px;
+    }
+    &__fullname {
+        display: block;
+        @extend %dmsans-bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+        margin-bottom: 20px;
+    }
+    &__position {
+        display: block;
+        @extend %rubik-regular;
+        color: #565872;
+        font-size: 16px;
+    }
+    &__network {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social {
+        background-color: #f6f6f6;
+    }
+}
