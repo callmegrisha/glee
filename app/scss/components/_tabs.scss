@@ -2,6 +2,7 @@
     margin-bottom: 70px;
     display: flex;
     justify-content: center;
+
     .tab {
         @extend %dmsans-bold;
         color: #8b8b8b;
@@ -9,16 +10,20 @@
         line-height: 1;
         cursor: pointer;
         transition: color 0.3s;
+
         &:not(:last-child) {
             margin-right: 33px;
         }
+
         &--active,
         &:hover {
             color: #191919;
         }
     }
+
     &__content {
         display: none;
+
         &--active {
             display: inherit;
         }

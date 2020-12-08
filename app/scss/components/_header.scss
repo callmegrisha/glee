@@ -1,8 +1,10 @@
 .header {
     padding: 50px 0 43px;
+
     &__inner {
         display: flex;
     }
+
     &__logo {
         margin-right: 28%;
     }
@@ -11,15 +13,18 @@
 .menu {
     display: flex;
     margin-right: 19%;
+
     &__item:not(:last-child) {
         margin-right: 30px;
     }
+
     &__link {
         font-size: 15px;
         line-height: 12px;
         color: #436372;
         transition: border-color 0.3s;
         border-bottom: 1px solid transparent;
+
         &:hover {
             border-color: #436372;
         }
@@ -28,31 +33,39 @@
 
 .user-nav {
     display: flex;
+
     &__btn {
         @extend %btn-param;
         transition: background-color 0.5s;
+
         &:hover {
             background-color: #80a1b3;
         }
+
         &--search {
             background-color: #edf1f4;
             margin-right: 20px;
         }
+
         &--toggler {
             background-color: #a3bbc8;
         }
     }
+
     &__doublebtn {
         background-color: #fcd7b6;
         position: relative;
         transition: background-color 0.5s;
+
         &:hover {
             background-color: #f3c194;
         }
+
         &--wish {
             padding: 17px 30px 17px 40px;
             border-radius: 25px 0 0 25px;
-            position: relative;
+
+
             &::after {
                 position: absolute;
                 content: '';
@@ -63,12 +76,14 @@
                 right: 0;
             }
         }
+
         &--basket {
             padding: 17px 40px 17px 30px;
             border-radius: 0 25px 25px 0;
             margin-right: 20px;
         }
     }
+
     &__num {
         position: absolute;
         background-color: $body-color;

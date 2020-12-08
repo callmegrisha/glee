@@ -4,6 +4,7 @@ $btn-color: #a3bbc8;
 $title-color: #191919;
 $post-date: #222933;
 $body-color: #fff;
+
 %rubik-regular {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -50,7 +51,7 @@ $body-color: #fff;
 
 %title-limitation {
     display: -webkit-box !important;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;

@@ -2,6 +2,7 @@
     padding: 0 0 90px;
     position: relative;
     overflow: hidden;
+
     &::before {
         display: block;
         position: absolute;
@@ -13,19 +14,25 @@
         left: 0;
         z-index: -1;
     }
+
     &__top {
         display: flex;
         justify-content: space-between;
     }
+
     &__title {
         margin-bottom: 47px;
     }
+
     &__more {
         position: relative;
         @extend %dmsans-bold;
+        color: $accent-color;
         font-size: 16px;
         padding-top: 20px;
         padding-right: 25px;
+        align-self: flex-start;
+
         &::after {
             position: absolute;
             content: '';
@@ -36,7 +43,12 @@
             right: 0;
             top: 23px;
         }
+
+        &:hover {
+            color: $title-color;
+        }
     }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

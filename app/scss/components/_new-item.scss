@@ -5,20 +5,24 @@
     min-height: 390px;
     padding: 98px 150px 80px 386px;
     background-color: #feefe2;
+
     &__img {
         position: absolute;
         bottom: 85px;
         left: 136px;
+
         img {
             object-fit: cover;
             max-width: 230px;
         }
     }
+
     &__content {
         color: $accent-color;
         display: flex;
         flex-direction: column;
     }
+
     &__title {
         @extend %dmsans-bold;
         font-size: 26px;
@@ -26,6 +30,7 @@
         margin-bottom: 19px;
         @extend %title-limitation;
     }
+
     &__desc {
         @extend %rubik-regular;
         font-size: 16px;
@@ -33,6 +38,7 @@
         margin-bottom: 30px;
         @extend %content-limitation;
     }
+
     &__btn {
         display: inline-block;
         position: relative;
@@ -46,12 +52,14 @@
         line-height: 1;
         transition: border-color 0.3s;
         align-self: flex-start;
+
         &::after {
             position: absolute;
             content: '';
             @extend %arrow-right;
             background-image: url('../images/icons/arrow-blue.svg');
         }
+
         &:hover {
             border-color: #436372;
         }
