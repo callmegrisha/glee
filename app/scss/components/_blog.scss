@@ -27,9 +27,11 @@
     &__more {
         position: relative;
         @extend %dmsans-bold;
+        color: $accent-color;
         font-size: 16px;
         padding-top: 20px;
         padding-right: 25px;
+        align-self: flex-start;
 
         &::after {
             position: absolute;
@@ -40,6 +42,10 @@
             background-repeat: no-repeat;
             right: 0;
             top: 23px;
+        }
+
+        &:hover {
+            color: $title-color;
         }
     }
 

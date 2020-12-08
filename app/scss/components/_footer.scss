@@ -106,29 +106,29 @@
 
     &__nav {
         display: flex;
+    }
 
-        &-item {
-            position: relative;
-        }
+    &__nav-item {
+        position: relative;
 
-        &-item:not(:last-child) {
+        &:not(:last-child) {
             margin-right: 30px;
-        }
 
-        &-item:not(:last-child)::after {
-            position: absolute;
-            content: '';
-            width: 2px;
-            height: 17px;
-            background-color: #7b7b7b;
-            top: 0px;
-            right: -15px;
-        }
-
-        &-link {
-            &:hover {
-                border-bottom: 1px solid #7b7b7b;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 17px;
+                background-color: #7b7b7b;
+                top: 0px;
+                right: -15px;
             }
+        }
+    }
+
+    &__nav-link {
+        &:hover {
+            border-bottom: 1px solid #7b7b7b;
         }
     }
 }

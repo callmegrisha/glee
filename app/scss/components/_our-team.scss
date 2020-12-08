@@ -1,6 +1,7 @@
 .our-team {
     padding: 120px 0;
 
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -52,6 +53,15 @@
         box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
     }
 
+    &__list {
+        max-width: 770px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 100px;
+        column-gap: 30px;
+    }
+
     &__img {
         width: 100%;
 
@@ -67,9 +77,15 @@
         width: 100%;
         background-color: $body-color;
         display: flex;
+        align-items: center;
         padding: 20px 30px;
         position: absolute;
-        bottom: -35px;
+        bottom: -54px;
+
+    }
+
+    &__record {
+        margin-right: 30px;
     }
 
     &__fullname {
@@ -89,11 +105,22 @@
     }
 
     &__network {
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
 
     &__social {
+        display: inline-block;
         background-color: #f6f6f6;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 30%;
+            top: 30%;
+        }
     }
+
 }
