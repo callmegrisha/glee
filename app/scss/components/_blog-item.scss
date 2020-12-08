@@ -4,9 +4,11 @@
     border-radius: 10px;
     transition: box-shadow 0.5s;
     background-color: $body-color;
+
     &:hover {
         box-shadow: 1px 0px 20px -2px rgba(34, 60, 80, 0.75);
     }
+
     &__image {
         display: block;
         border-radius: 10px;
@@ -14,11 +16,13 @@
         height: 250px;
         object-fit: cover;
     }
+
     &__info {
         display: flex;
         flex-direction: column;
         padding: 35px 0 25px;
     }
+
     &__category {
         display: block;
         position: absolute;
@@ -33,6 +37,7 @@
         background-color: $btn-color;
         border-radius: 25px;
     }
+
     &__title {
         display: block;
         max-width: 290px;
@@ -45,6 +50,7 @@
         border-bottom: 1px solid #e0e0e0;
         @extend %title-limitation;
     }
+
     &__details {
         max-width: 290px;
         display: flex;
@@ -55,9 +61,11 @@
         line-height: 1.2;
         color: #222933;
     }
+
     &__date {
         position: relative;
         margin-right: 30px;
+
         &::before {
             position: absolute;
             content: '';
@@ -68,8 +76,10 @@
             top: -4px;
         }
     }
+
     &__author {
         position: relative;
+
         &::before {
             position: absolute;
             content: '';
@@ -80,6 +90,7 @@
             top: -4px;
         }
     }
+
     &__link {
         display: block;
         position: absolute;

@@ -1,5 +1,6 @@
 .products {
     padding: 36px 0 100px;
+
     &__catalog {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

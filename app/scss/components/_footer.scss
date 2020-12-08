@@ -1,47 +1,58 @@
 .footer {
     padding: 80px 0 40px;
     @extend %rubik-regular;
+
     &__top {
         display: flex;
         padding-bottom: 55px;
         border-bottom: 1px solid #dae4e9;
     }
+
     &__contacts {
         line-height: 2;
         font-style: normal;
     }
+
     &__column {
         &--contacts {
             max-width: 200px;
             margin-right: 100px;
         }
+
         &--services {
             max-width: 120px;
             margin-right: 180px;
         }
+
         &--account {
             max-width: 100px;
             margin-right: 211px;
         }
+
         &--form {
             max-width: 270px;
         }
     }
+
     &__link {
         line-height: 2.1;
+
         &:hover {
             border-bottom: 1px solid #7b7b7b;
         }
     }
+
     &__logo,
     &__title {
         display: block;
         margin-bottom: 25px;
     }
+
     &__contacts span,
     &__title {
         text-transform: uppercase;
     }
+
     &__title {
         padding-top: 16px;
         font-weight: bold;
@@ -49,14 +60,17 @@
         line-height: 21px;
         color: #1f2044;
     }
+
     &__text {
         margin-bottom: 41px;
     }
+
     &__label {
         display: block;
         font-size: 0;
         line-height: 0;
     }
+
     &__input {
         max-width: 170px;
         width: 100%;
@@ -66,33 +80,41 @@
         font-size: 12px;
         line-height: 1;
         outline: transparent;
+
         &::placeholder {
             color: #234969;
         }
     }
+
     &__btn {
         padding: 13px 16px;
         background-color: #a3bbc8;
         line-height: 1;
         color: #fff;
         margin-left: -1px;
+
         &:hover {
             background-color: #80a1b3;
         }
     }
+
     &__bottom {
         padding: 23px 0 40px;
         display: flex;
         justify-content: space-between;
     }
+
     &__nav {
         display: flex;
+
         &-item {
             position: relative;
         }
+
         &-item:not(:last-child) {
             margin-right: 30px;
         }
+
         &-item:not(:last-child)::after {
             position: absolute;
             content: '';
@@ -102,6 +124,7 @@
             top: 0px;
             right: -15px;
         }
+
         &-link {
             &:hover {
                 border-bottom: 1px solid #7b7b7b;
