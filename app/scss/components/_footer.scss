@@ -14,19 +14,23 @@
     }
 
     &__column {
+        white-space: nowrap;
+
         &--contacts {
             max-width: 200px;
-            margin-right: 100px;
+            margin-right: 8%;
+            white-space: normal;
         }
 
         &--services {
             max-width: 120px;
-            margin-right: 180px;
+            margin-right: 16%;
+
         }
 
         &--account {
             max-width: 100px;
-            margin-right: 211px;
+            margin-right: 18%;
         }
 
         &--form {
@@ -102,6 +106,7 @@
         padding: 23px 0 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__nav {

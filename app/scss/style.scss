@@ -2,8 +2,10 @@
 @import 'vars';
 @import 'reset';
 @import 'libs';
-@import 'global';
+
 @import 'components/header';
+
+@import 'components/burger-btn';
 @import 'components/slider-top';
 @import 'components/products';
 @import 'components/tabs';
@@ -15,8 +17,14 @@
 @import 'components/blog';
 @import 'components/blog-item';
 @import 'components/partners';
-@import 'components/breadcrumbs';
+
+
+
 @import 'components/about-us';
+
+@import 'components/breadcrumbs';
 @import 'components/statistics';
 @import 'components/our-team';
 @import 'components/footer';
+
+@import 'global';

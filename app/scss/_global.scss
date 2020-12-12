@@ -23,6 +23,109 @@ button {
     flex-grow: 1;
 }
 
+@media (max-width: 1000px) {
+
+    .header {
+        position: relative;
+        flex-wrap: wrap;
+
+        &--active {
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-color: #cce2ed;
+                top: 0;
+                right: 0;
+                bottom: -300%;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+        &__inner {
+            justify-content: space-around;
+        }
+
+        &__logo {
+            z-index: 2;
+        }
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+
+        &__item:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &__link {
+            display: block;
+            font-size: 20px;
+            line-height: 2;
+            padding: 20px 0;
+        }
+
+        &--active {
+            display: block;
+            position: absolute;
+            top: 130%;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+
+    }
+
+    .user-nav {
+        display: none;
+        flex-wrap: nowrap;
+        transform: translate(-50px, 80px);
+        z-index: 2;
+
+        &__doublebtn {
+            &--basket {
+                margin-left: -5px;
+            }
+        }
+
+        &--active {
+            display: block;
+        }
+    }
+
+    .burger-btn {
+        display: block;
+        z-index: 2;
+    }
+
+    .footer {
+        overflow-x: scroll;
+
+        &__bottom {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        &--active {
+            &::after {
+                bottom: -360%;
+            }
+        }
+    }
+
+
+    .user-nav {
+        display: none;
+    }
+}
+
 .container {
     max-width: 1800px;
     width: 100%;
