@@ -5,7 +5,7 @@ $(function() {
         dots: true
     });
 
-    $('.tab').on('click', function() {
+    $('.tabs__item').on('click', function() {
 
         let tabId = $(this).attr('data-tab');
 

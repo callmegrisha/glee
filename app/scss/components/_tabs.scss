@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 
-    .tab {
+    &__item {
         @extend %dmsans-bold;
         color: #8b8b8b;
         font-size: 16px;

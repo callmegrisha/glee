@@ -7,8 +7,9 @@
 
     &__catalog {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 30px;
+
     }
 }
 

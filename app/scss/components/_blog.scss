@@ -1,5 +1,4 @@
 .blog {
-    padding: 0 0 90px;
     position: relative;
     overflow: hidden;
 
@@ -51,7 +50,7 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 30px;
     }
 }

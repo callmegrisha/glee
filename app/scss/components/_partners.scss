@@ -1,11 +1,18 @@
-ul.partners {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 62px 0 0;
+.partners {
+    background-color: #f7f0e9;
 
-    img {
-        max-width: 200px;
-        object-fit: cover;
+    ul.partners__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 62px 0 85px;
+        margin: 0;
+
+        img {
+            max-width: 200px;
+            object-fit: cover;
+        }
     }
+
 }
