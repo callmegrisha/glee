@@ -36,6 +36,7 @@
         color: $body-color;
         font-size: 15px;
         line-height: 1.2;
+        transition: background-color 0.3s;
 
         &::after {
             position: absolute;
@@ -45,6 +46,10 @@
             background-image: url('../images/icons/arrow-right-2.svg');
             right: 25px;
             top: 21px;
+        }
+
+        &:hover {
+            background-color: #8fa6b2;
         }
     }
 
@@ -115,6 +120,12 @@
         height: 40px;
         border-radius: 50%;
         position: relative;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #e5e3e3;
+        }
+
 
         img {
             position: absolute;
