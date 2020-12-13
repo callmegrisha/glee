@@ -5,7 +5,7 @@ $(function() {
         dots: true
     });
 
-    $('.tab').on('click', function() {
+    $('.tabs__item').on('click', function() {
 
         let tabId = $(this).attr('data-tab');
 
@@ -14,6 +14,14 @@ $(function() {
 
         $(this).addClass('tab--active');
         $("#" + tabId).addClass('tabs__content--active');
+    });
+
+    $('.header__inner, menu a, user-nav').on('click', function() {
+
+        $('.burger-btn').toggleClass('burger-btn--active');
+        $('.menu').toggleClass('menu--active');
+        $('.user-nav').toggleClass('user-nav--active');
+        $('.header').toggleClass('header--active');
     });
 
 });

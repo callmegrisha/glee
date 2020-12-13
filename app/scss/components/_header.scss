@@ -3,16 +3,13 @@
 
     &__inner {
         display: flex;
-    }
-
-    &__logo {
-        margin-right: 28%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .menu {
     display: flex;
-    margin-right: 19%;
 
     &__item:not(:last-child) {
         margin-right: 30px;
@@ -24,6 +21,7 @@
         color: #436372;
         transition: border-color 0.3s;
         border-bottom: 1px solid transparent;
+        white-space: nowrap;
 
         &:hover {
             border-color: #436372;
@@ -74,6 +72,7 @@
                 background-color: #fde7d3;
                 top: 9px;
                 right: 0;
+                z-index: 1;
             }
         }
 
@@ -94,4 +93,5 @@
         color: #243f4d;
         top: 11px;
     }
+
 }
