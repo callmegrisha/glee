@@ -1,0 +1,14 @@
+.catalog {
+    padding: 120px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__filters {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+    }
+}

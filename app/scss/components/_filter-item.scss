@@ -1,0 +1,42 @@
+.filter-item {
+    margin-bottom: 60px;
+
+    &__title {
+        @extend %dmsans-bold;
+        font-size: 18px;
+        line-height: 1;
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        &::after {
+            display: inline-block;
+            content: '';
+            width: 38px;
+            height: 3px;
+            background-color: $btn-color;
+            margin-left: 17px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__categories-link {
+        display: block;
+        @extend %rubik-regular;
+        color: $accent-color;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 5px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '>';
+            right: 22px;
+        }
+
+        &:hover {
+            background-color: #edf1f4;
+        }
+    }
+}
