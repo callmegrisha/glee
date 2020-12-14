@@ -65,6 +65,12 @@ $body-color: #fff;
     overflow: hidden;
 }
 
+%h1-title {
+    opacity: 0;
+    line-height: 1;
+    font-size: 0;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }

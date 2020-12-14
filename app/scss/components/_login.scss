@@ -1,0 +1,48 @@
+.login {
+    padding: 115px 0;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__title {
+        @extend %h1-title;
+    }
+
+    &__not-register {
+        display: block;
+        @extend %rubik-regular;
+        font-size: 14px;
+        color: #436372;
+        padding-top: 30px;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::before {
+            position: absolute;
+            display: block;
+
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #f6f6f6;
+        }
+    }
+
+    &__create-acc {
+        display: inline-block;
+        @extend %rubik-medium;
+        color: $accent-color;
+        font-size: 18px;
+        line-height: 1;
+        padding: 20px 150px;
+        border: 1px solid $btn-color;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $btn-color;
+            color: $body-color;
+        }
+    }
+}

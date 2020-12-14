@@ -1,0 +1,60 @@
+.login-form {
+    @extend %rubik-regular;
+    font-size: 14px;
+    color: #436372;
+    line-height: 1;
+
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 25px;
+
+        &--checkbox {
+            margin-bottom: 0;
+        }
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 60px;
+        border: 2px solid #f6f6f6;
+        margin-top: 15px;
+        @extend %rubik-regular;
+        font-size: 14px;
+        color: #436372;
+
+        &:focus {
+            outline: 2px solid #436372;
+        }
+
+        &--checkbox {
+            display: inline-block;
+            margin: 0 13px 0 0;
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+
+            &:focus {
+                outline-color: transparent;
+
+            }
+        }
+    }
+
+    &__pass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__forgot {
+        transition: color 0.5s;
+
+        &:hover {
+            color: red;
+        }
+    }
+}

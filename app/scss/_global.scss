@@ -251,6 +251,14 @@ button {
     .video {
         min-height: 200px;
     }
+
+    .login {
+        max-width: 300px;
+
+        &__create-acc {
+            padding: 20px 30px;
+        }
+    }
 }
 
 @media (max-width: 460px) {
@@ -340,6 +348,22 @@ button {
 
         &__details {
             padding: 40px 19px 0;
+        }
+    }
+
+    .login {
+        max-width: 250px;
+    }
+
+    .login-form {
+        &__label {
+            &--checkbox {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__pass {
+            flex-direction: column;
         }
     }
 }
