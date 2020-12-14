@@ -56,7 +56,7 @@ button {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .header {
         position: relative;
@@ -167,6 +167,37 @@ button {
         }
     }
 
+    .about-us {
+        &__content {
+            justify-content: center;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .our-team {
+
+
+        &__inner {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__invite {
+            margin-right: 0;
+        }
+
+        &__list {
+            margin-bottom: 60px;
+        }
+
+        &__person {
+            justify-self: center;
+        }
+    }
+
     .footer {
 
         &__top {
@@ -259,6 +290,44 @@ button {
             padding: 20px 30px;
         }
     }
+
+    .about-us {
+        &__item {
+            margin-right: 0;
+        }
+
+        &__text {
+            padding-top: 30px;
+        }
+
+        &__progress {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__item {
+            &:not(:last-child)::after {
+                display: none;
+            }
+        }
+    }
+
+    .statistics {
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 460px) {
@@ -348,6 +417,37 @@ button {
 
         &__details {
             padding: 40px 19px 0;
+        }
+    }
+
+    .about-us {
+        padding: 20px 0;
+
+        &__experience {
+            padding-left: 130px;
+
+            &::before {
+                font-size: 100px;
+                top: 0;
+            }
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .our-team {
+        &__img {
+            img {
+                max-width: 260px;
+            }
+        }
+
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
 
