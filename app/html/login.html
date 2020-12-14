@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @include('./common/header.html')
+
+    <main class="main">
+
+        <h1 class="login__title">Welcome to Log in page</h1>
+
+        <div class="top">
+
+            <h2 class="top__title">Log in</h2>
+
+            <ul class="breadcrumbs">
+
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Log in</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="login">
+
+            <form class="login-form" action="#">
+
+                <label class="login-form__label">
+                    Username or email address *
+                    <input class="login-form__input" type="email" required>
+                </label>
+
+                <label class="login-form__label">
+                    Password *
+                    <input class="login-form__input" type="password"  required>
+                </label>
+
+                <button class="login-form__btn" type="submit"></button>
+
+                <div class="login-form__pass">
+
+                    <label class="login-form__label login-form__label--checkbox" for="#">
+                        <input class="login-form__input login-form__input--checkbox" type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a class="login-form__forgot" href="#">Lost your password?</a>
+
+                </div>
+
+            </form>
+
+            <span class="login__not-register">Not registered? No problem</span>
+
+            <a class="login__create-acc" href="#">Create an account</a>
+
+        </div>
+
+
+        @include('./common/partners.html')
+
+    </main>
+
+
+    @include('./common/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
