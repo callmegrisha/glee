@@ -10,6 +10,7 @@
     &__invite {
         max-width: 310px;
         width: 100%;
+        margin-right: 70px;
     }
 
     &__title {
@@ -62,7 +63,7 @@
         max-width: 770px;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         row-gap: 100px;
         column-gap: 30px;
     }
