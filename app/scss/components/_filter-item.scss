@@ -1,6 +1,10 @@
 .filter-item {
     margin-bottom: 60px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &__title {
         @extend %dmsans-bold;
         font-size: 18px;
@@ -38,5 +42,48 @@
         &:hover {
             background-color: #edf1f4;
         }
+    }
+
+    .irs--flat .irs-line {
+        top: 26px;
+        height: 3px;
+        background-color: #c2d2db;
+        border-radius: 0;
+    }
+
+    .irs--flat .irs-bar {
+        top: 25px;
+        height: 4px;
+        background-color: $btn-color;
+    }
+
+    .irs--flat .irs-handle>i:first-child {
+        top: -2px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: #a3bbc8;
+    }
+
+    .irs--flat .irs-from,
+    .irs--flat .irs-to,
+    .irs--flat .irs-single {
+        display: none;
+    }
+
+    .irs--flat .irs-min,
+    .irs--flat .irs-max {
+        display: none;
+    }
+
+    &__range-price {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__range-from::before,
+    &__range-to::before {
+        display: inline-block;
+        content: '$';
     }
 }

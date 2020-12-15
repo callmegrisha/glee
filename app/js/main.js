@@ -24,4 +24,17 @@ $(function() {
         $('.header').toggleClass('header--active');
     });
 
+    $('.flter-item__range-input').ionRangeSlider({
+        type: "double",
+        prefix: "$",
+        onStart: function (data) {
+            $('.filter-item__range-from').text(data.from);
+            $('.filter-item__range-to').text(data.to);
+        },
+        onChange: function (data) {
+            $('.filter-item__range-from').text(data.from);
+            $('.filter-item__range-to').text(data.to);
+        }
+    });
+
 });
