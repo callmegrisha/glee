@@ -1,5 +1,7 @@
 .filter-item {
     margin-bottom: 60px;
+    color: $accent-color;
+    @extend %rubik-regular;
 
     &:last-child {
         margin-bottom: 0;
@@ -26,8 +28,6 @@
 
     &__categories-link {
         display: block;
-        @extend %rubik-regular;
-        color: $accent-color;
         font-size: 16px;
         padding: 15px;
         border-radius: 5px;
@@ -85,5 +85,27 @@
     &__range-to::before {
         display: inline-block;
         content: '$';
+    }
+
+    &__brand-input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+
+        &:checked+.filter-item__brand-text {
+            background-color: #edf1f4;
+        }
+    }
+
+    &__brand-text {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
     }
 }
