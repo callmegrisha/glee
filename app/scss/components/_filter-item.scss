@@ -1,0 +1,153 @@
+.filter-item {
+    margin-bottom: 60px;
+    color: $accent-color;
+    @extend %rubik-regular;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        @extend %dmsans-bold;
+        font-size: 18px;
+        line-height: 1;
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        &::after {
+            display: inline-block;
+            content: '';
+            width: 38px;
+            height: 3px;
+            background-color: $btn-color;
+            margin-left: 17px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__categories-link {
+        display: block;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 5px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '>';
+            right: 22px;
+        }
+
+        &:hover {
+            background-color: #edf1f4;
+        }
+    }
+
+    .irs--flat .irs-line {
+        top: 26px;
+        height: 3px;
+        background-color: #c2d2db;
+        border-radius: 0;
+    }
+
+    .irs--flat .irs-bar {
+        top: 25px;
+        height: 4px;
+        background-color: $btn-color;
+    }
+
+    .irs--flat .irs-handle>i:first-child {
+        top: -2px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: #a3bbc8;
+    }
+
+    .irs--flat .irs-from,
+    .irs--flat .irs-to,
+    .irs--flat .irs-single {
+        display: none;
+    }
+
+    .irs--flat .irs-min,
+    .irs--flat .irs-max {
+        display: none;
+    }
+
+    &__range-price {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__range-from::before,
+    &__range-to::before {
+        display: inline-block;
+        content: '$';
+    }
+
+    &__brand-input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+
+        &:checked+.filter-item__brand-text {
+            background-color: #edf1f4;
+        }
+    }
+
+    &__brand-text {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__product {
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+        color: #333333;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__product-img {
+        max-width: 70px;
+        max-height: 70px;
+        width: 100%;
+        object-fit: cover;
+        background-color: rgb(229, 229, 229);
+        border: 2px solid #f2f2f2;
+        margin-right: 15px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__product-name {
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .jq-ry-container {
+        padding: 0;
+    }
+
+    &__product-rating {
+        margin-bottom: 11px;
+    }
+}
