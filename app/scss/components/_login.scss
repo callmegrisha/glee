@@ -5,10 +5,6 @@
     margin: 0 auto;
     text-align: center;
 
-    &__title {
-        @extend %h1-title;
-    }
-
     &__not-register {
         display: block;
         @extend %rubik-regular;

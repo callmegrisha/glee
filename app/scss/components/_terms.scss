@@ -5,10 +5,6 @@
     line-height: 1.9;
     color: $accent-color;
 
-    &__main-title {
-        @extend %h1-title;
-    }
-
     &__item {
         margin-bottom: 70px;
     }
