@@ -46,17 +46,16 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
-function svgSprites() {
-    return src('app/images/**.svg')
+const svgSprites = () => {
+    return src('./app/images/icons/**.svg')
         .pipe(svgSprite({
-            mode: {
-                stack: {
-
-                    sprite: '../sprite.svg'
-                }
-            }
+             mode: {
+                 stack: {
+                     sprite: "../sprite.svg"
+                 }
+             }
         }))
-        .pipe(dest('./app/images'))
+        .pipe(dest('./app/images'));
 }
 
 function images() {
@@ -72,7 +71,7 @@ function images() {
                 ]
             })
         ]))
-        .pipe(dest('dist/images'))
+        .pipe(dest('dist/images'));
 }
 
 const htmlInclude = () => {
@@ -105,6 +104,7 @@ function watching() {
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
     watch('./app/html/*.html', htmlInclude);
+    watch('./src/img/**.svg', svgSprites);
 }
 
 exports.htmlInclude = htmlInclude;
@@ -117,4 +117,4 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(htmlInclude, styles, scripts, browsersync, watching);
+exports.default = parallel(htmlInclude, svgSprites, styles, scripts, browsersync, watching);

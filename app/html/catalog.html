@@ -14,23 +14,9 @@
 
     <main class="main">
         
-        <div class="top">
-
-            <h2 class="top__title">Product List 1</h2>
-
-            <ul class="breadcrumbs">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Product List 1</a>
-                </li>
-
-            </ul>
-
-        </div>
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Product List", "link": "Home", "final__link": "Product List"}
+        ])
 
         <section class="catalog">
 

@@ -43,6 +43,24 @@
         }
     }
 
+    &__btn {
+        height: 60px;
+        background-color: $btn-color;
+        @extend %rubik-medium;
+        font-size: 18px;
+        line-height: 1;
+        color: $body-color;
+        width: 100%;
+        margin-bottom: 35px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $body-color;
+            border: 1px solid #a3bbc8;
+            color: #243f4d;
+        }
+    }
+
     &__pass {
         display: flex;
         justify-content: space-between;

@@ -14,25 +14,9 @@
 
     <main class="main">
 
-        <h1 class="main-title">Welcome to Log in page</h1>
-
-        <div class="top">
-
-            <h2 class="top__title">Log in</h2>
-
-            <ul class="breadcrumbs">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Log in</a>
-                </li>
-
-            </ul>
-
-        </div>
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Log in", "link": "Home", "final__link": "Log in"}
+        ])
 
         <div class="login">
 
@@ -48,7 +32,7 @@
                     <input class="login-form__input" type="password"  required>
                 </label>
 
-                <button class="login-form__btn" type="submit"></button>
+                <button class="login-form__btn" type="submit">Login</button>
 
                 <div class="login-form__pass">
 

@@ -14,25 +14,9 @@
 
     <main class="main">
 
-        <h1 class="main-title">Welcome to Terms & Conditions Page</h1>
-
-        <div class="top">
-
-            <h2 class="top__title">Terms & Conditions</h2>
-
-            <ul class="breadcrumbs">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Terms & Conditions</a>
-                </li>
-
-            </ul>
-
-        </div>
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Terms & Conditions", "link": "Home", "final__link": "Terms & Conditions"}
+        ])
 
         <section class="terms">
 
