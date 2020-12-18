@@ -22,12 +22,19 @@
 
     &__link {
         position: absolute;
-        background-image: url('../images/icons/play.svg');
+        background-image: url('../images/icons/sprite.svg#play');
         width: 100px;
         height: 100px;
         background-repeat: no-repeat;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        transition: filter 0.3s;
+
+        &:hover {
+            filter: invert(54%) sepia(24%) saturate(289%) hue-rotate(157deg) brightness(103%) contrast(85%);
+
+
+        }
     }
 }

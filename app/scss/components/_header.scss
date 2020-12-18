@@ -43,10 +43,12 @@
         &--search {
             background-color: #edf1f4;
             margin-right: 20px;
+            fill: #26414f;
         }
 
         &--toggler {
             background-color: #a3bbc8;
+            fill: $body-color;
         }
     }
 
@@ -54,6 +56,7 @@
         background-color: #fcd7b6;
         position: relative;
         transition: background-color 0.5s;
+        fill: #41535b;
 
         &:hover {
             background-color: #f3c194;

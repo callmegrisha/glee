@@ -47,7 +47,13 @@
         &::after {
             position: absolute;
             content: '';
-            @extend %arrow-right;
+            background-image: url('../images/icons/sprite.svg#arrow-right');
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 20px;
+            right: 20px;
+            top: 20px;
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(194deg) brightness(105%) contrast(100%);
         }
 
         &:hover {
@@ -64,10 +70,7 @@
         object-fit: cover;
 
         img {
-
             width: 100%;
-
-
         }
 
         &::after {
@@ -129,7 +132,7 @@
     justify-content: space-around;
 
     &__item {
-        padding: 45px 147px 45px 200px;
+        padding: 45px 147px 25px 200px;
         position: relative;
 
         &::before {
@@ -141,6 +144,7 @@
             background-position: center;
             left: 135px;
             top: 48px;
+            filter: invert(82%) sepia(4%) saturate(1461%) hue-rotate(157deg) brightness(91%) contrast(86%);
         }
 
         &:not(:last-child)::after {
@@ -151,18 +155,20 @@
             background-color: #e8e4df;
             right: 0;
             top: 0;
+
         }
 
         &--support::before {
-            background-image: url('../images/icons/support.svg');
+            background-image: url('../images/icons/sprite.svg#support');
+            fill: #fff;
         }
 
         &--delivery::before {
-            background-image: url('../images/icons/delivery.svg');
+            background-image: url('../images/icons/sprite.svg#delivery');
         }
 
         &--payment::before {
-            background-image: url('../images/icons/payment.svg');
+            background-image: url('../images/icons/sprite.svg#payment');
         }
     }
 
