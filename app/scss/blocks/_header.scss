@@ -18,13 +18,13 @@
     &__link {
         font-size: 15px;
         line-height: 12px;
-        color: #436372;
+        color: $text-color;
         transition: border-color 0.3s;
         border-bottom: 1px solid transparent;
         white-space: nowrap;
 
         &:hover {
-            border-color: #436372;
+            border-color: $text-color;
         }
     }
 }
@@ -47,7 +47,7 @@
         }
 
         &--toggler {
-            background-color: #a3bbc8;
+            background-color: $btn-color;
             fill: $body-color;
         }
     }
@@ -93,7 +93,7 @@
         border-radius: 50%;
         @extend %dmsans-regular;
         font-size: 10px;
-        color: #243f4d;
+        color: $accent-color;
         top: 11px;
     }
 

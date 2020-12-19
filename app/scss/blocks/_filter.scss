@@ -1,4 +1,4 @@
-.filter-item {
+.filter {
     margin-bottom: 60px;
     color: $accent-color;
     @extend %rubik-regular;
@@ -63,6 +63,7 @@
         width: 15px;
         height: 15px;
         background-color: #a3bbc8;
+        cursor: pointer;
     }
 
     .irs--flat .irs-from,
@@ -95,7 +96,7 @@
         position: absolute;
 
 
-        &:checked+.filter-item__brand-text {
+        &:checked+.filter__brand-text {
             background-color: #edf1f4;
         }
     }
@@ -107,47 +108,9 @@
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-    }
 
-    &__product {
-        max-width: 200px;
-        display: flex;
-        justify-content: space-between;
-        color: #333333;
-        margin-bottom: 25px;
-
-        &:last-child {
-            margin-bottom: 0;
+        &:hover {
+            background-color: #e3e6e9;
         }
-    }
-
-    &__product-img {
-        max-width: 70px;
-        max-height: 70px;
-        width: 100%;
-        object-fit: cover;
-        background-color: rgb(229, 229, 229);
-        border: 2px solid #f2f2f2;
-        margin-right: 15px;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__product-name {
-        display: block;
-        font-size: 14px;
-        line-height: 1;
-        margin-bottom: 10px;
-    }
-
-    .jq-ry-container {
-        padding: 0;
-    }
-
-    &__product-rating {
-        margin-bottom: 11px;
     }
 }

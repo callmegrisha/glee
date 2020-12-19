@@ -1,0 +1,14 @@
+.new-design {
+    padding: 0 0 110px;
+
+    &__inner {
+        margin-bottom: 106px;
+    }
+
+    &__catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 30px;
+
+    }
+}

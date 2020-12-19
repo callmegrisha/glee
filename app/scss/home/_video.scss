@@ -1,18 +1,3 @@
-.new-design {
-    padding: 0 0 110px;
-
-    &__inner {
-        margin-bottom: 106px;
-    }
-
-    &__catalog {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-        gap: 30px;
-
-    }
-}
-
 .video {
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,8 +18,6 @@
 
         &:hover {
             filter: invert(54%) sepia(24%) saturate(289%) hue-rotate(157deg) brightness(103%) contrast(85%);
-
-
         }
     }
 }

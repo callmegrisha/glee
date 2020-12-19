@@ -1,4 +1,4 @@
-.login {
+.auth {
     padding: 115px 0;
     max-width: 470px;
     width: 100%;
@@ -9,7 +9,7 @@
         display: block;
         @extend %rubik-regular;
         font-size: 14px;
-        color: #436372;
+        color: $text-color;
         padding-top: 30px;
         position: relative;
         margin-bottom: 25px;

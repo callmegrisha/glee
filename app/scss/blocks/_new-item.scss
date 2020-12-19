@@ -47,7 +47,7 @@
         padding: 21px 89px 20px 15px;
         border: 1px solid #b3b7b5;
         border-radius: 5px;
-        color: #436372;
+        color: $text-color;
         @extend %rubik-medium;
         font-size: 15px;
         line-height: 1;
@@ -67,8 +67,8 @@
         }
 
         &:hover {
-            border-color: #436372;
-            background-color: #436372;
+            border-color: $text-color;
+            background-color: $text-color;
             color: $body-color;
 
             &::after {

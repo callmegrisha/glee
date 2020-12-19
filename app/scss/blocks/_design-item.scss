@@ -40,4 +40,19 @@
         left: 0;
         right: 0;
     }
+
+
+
+    &__img {
+        position: absolute;
+        right: -150px;
+        top: 100px;
+    }
+
+    &--chair {
+        img {
+            right: 50px;
+            top: 50px;
+        }
+    }
 }

@@ -1,7 +1,7 @@
-.login-form {
+.auth-form {
     @extend %rubik-regular;
     font-size: 14px;
-    color: #436372;
+    color: $text-color;
     line-height: 1;
 
     &__label {
@@ -22,10 +22,10 @@
         margin-top: 15px;
         @extend %rubik-regular;
         font-size: 14px;
-        color: #436372;
+        color: $text-color;
 
         &:focus {
-            outline: 2px solid #436372;
+            outline: 2px solid $text-color;
         }
 
         &--checkbox {

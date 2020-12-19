@@ -7,18 +7,22 @@
     }
 
     &__item {
-        padding: 20px;
         margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 20px;
         @extend %rubik-regular;
         font-size: 16px;
         line-height: 1;
         border: 1px solid $btn-color;
         transition: all 0.3s;
         cursor: pointer;
-
-        &:last-child {
-            margin-right: 0;
-        }
 
         &:hover {
             background-color: $btn-color;

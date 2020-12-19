@@ -3,38 +3,41 @@
 @import 'reset';
 @import 'libs';
 
-@import 'components/header';
+@import 'blocks/header';
 
-@import 'components/burger-btn';
-@import 'components/slider-top';
-@import 'components/products';
-@import 'components/tabs';
-@import 'components/product-item';
+@import 'blocks/burger-btn';
+@import 'home/slider-top';
+@import 'home/advantages';
+@import 'home/products';
+@import 'blocks/tabs';
+@import 'blocks/product-item';
 @import 'components/new-items';
-@import 'components/new-item';
-@import 'components/new-design';
-@import 'components/design-item';
-@import 'components/blog';
-@import 'components/blog-item';
-@import 'components/partners';
+@import 'blocks/new-item';
+@import 'home/new-design';
+@import 'home/video';
+@import 'blocks/design-item';
+@import 'blocks/blog';
+@import 'blocks/blog-item';
+@import 'blocks/partners';
 
 
 
-@import 'components/about-us';
+@import 'about-us/about-us';
 
-@import 'components/breadcrumbs';
-@import 'components/statistics';
-@import 'components/our-team';
-@import 'components/footer';
+@import 'blocks/breadcrumbs';
+@import 'about-us/statistics';
+@import 'about-us/our-team';
+@import 'blocks/footer';
 
-@import 'components/terms';
+@import 'terms/terms';
 
-@import 'components/login';
-@import 'components/login-form';
+@import 'auth/auth';
+@import 'auth/auth-form';
 
-@import 'components/catalog';
-@import 'components/filter-item';
-@import 'components/pagination';
+@import 'catalog/catalog';
+@import 'blocks/filter';
+@import 'blocks/recent-products';
+@import 'blocks/pagination';
 
 @import 'components/articles';
 
