@@ -11,7 +11,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         max-width: 570px;
-        min-height: 675px;
         width: 100%;
     }
 
@@ -111,20 +110,20 @@
 
         &--projects {
             &::before {
-                background-image: url('../images/icons/projects-png.png');
+                background-image: url('../images/icons/sprite.svg#projects');
             }
         }
 
         &--revenue {
             &::before {
-                background-image: url('../images/icons/revenue-png.png');
+                background-image: url('../images/icons/sprite.svg#revenue');
                 left: -8px;
             }
         }
 
         &--awards {
             &::before {
-                background-image: url('../images/icons/award-png.png');
+                background-image: url('../images/icons/sprite.svg#awards');
                 left: -5px;
             }
         }

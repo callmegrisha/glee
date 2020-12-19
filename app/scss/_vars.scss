@@ -58,16 +58,29 @@ $body-color: #fff;
     overflow: hidden;
 }
 
-.main-title {
-    opacity: 0;
-    line-height: 1;
-    font-size: 0;
-}
-
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
+}
+
+@mixin lg {
+    @media (max-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media (max-width: 570px) {
+        @content;
+    }
 }

@@ -50,4 +50,9 @@
             transform: rotate(-45deg);
         }
     }
+
+    @include medium {
+        display: block;
+        z-index: 2;
+    }
 }

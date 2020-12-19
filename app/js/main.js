@@ -49,4 +49,12 @@ $(function() {
         readOnly: true
     });
 
+    if($('.partners__item').length > 5) {
+        $('.partners__list').slick({
+            slidesToShow: 6,
+            arrows: false,
+            autoplay: true
+        });
+    }
+
 });

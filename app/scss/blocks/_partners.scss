@@ -3,7 +3,7 @@
 
     ul.partners__list {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         padding: 75px 0 85px;
@@ -16,4 +16,7 @@
         }
     }
 
+    &__item {
+        margin-right: 30px;
+    }
 }
