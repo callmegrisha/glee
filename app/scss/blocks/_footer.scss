@@ -4,8 +4,21 @@
 
     &__top {
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         padding-bottom: 55px;
         border-bottom: 1px solid #dae4e9;
+
+        @include mobile {
+            justify-content: space-around;
+        }
+
+        @include small {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
     }
 
     &__contacts {
@@ -14,28 +27,25 @@
     }
 
     &__column {
-        white-space: nowrap;
 
         &--contacts {
             max-width: 200px;
-            margin-right: 8%;
-            white-space: normal;
         }
 
         &--services {
             max-width: 120px;
-            margin-right: 16%;
-
         }
 
         &--account {
             max-width: 100px;
-            margin-right: 18%;
         }
 
         &--form {
             max-width: 270px;
-            white-space: normal;
+
+            @include mobile {
+                text-align: center;
+            }
         }
     }
 
@@ -64,10 +74,18 @@
         font-size: 16px;
         line-height: 21px;
         color: #1f2044;
+
+        @include small {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
         margin-bottom: 41px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__label {
@@ -79,27 +97,56 @@
     &__input {
         max-width: 170px;
         width: 100%;
+        height: 38px;
         background-color: $bg-color;
         padding: 13px 16px;
         border: none;
         font-size: 12px;
         line-height: 1;
-        outline: transparent;
 
         &::placeholder {
             color: #234969;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        @include mobile {
+            max-width: none;
+            margin-bottom: 10px;
         }
     }
 
     &__btn {
         padding: 13px 16px;
-        background-color: #a3bbc8;
+        height: 40px;
+        background-color: $btn-color;
         line-height: 1;
         color: #fff;
         margin-left: -10px;
+        transition: background-color 0.3s;
+
+        &:focus {
+            @extend %outline;
+        }
 
         &:hover {
-            background-color: #80a1b3;
+            background-color: $accent-color;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        @include mobile {
+            display: block;
+            width: 100%;
+            margin-left: 0;
         }
     }
 
@@ -108,6 +155,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        @include small {
+            justify-content: center;
+        }
     }
 
     &__nav {

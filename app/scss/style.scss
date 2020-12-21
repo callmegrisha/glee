@@ -2,7 +2,7 @@
 @import 'vars';
 @import 'reset';
 @import 'libs';
-
+@import 'global';
 @import 'blocks/header';
 
 @import 'blocks/burger-btn';
@@ -41,5 +41,3 @@
 @import 'blocks/pagination';
 
 @import 'components/articles';
-
-@import 'global';

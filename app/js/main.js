@@ -53,7 +53,22 @@ $(function() {
         $('.partners__list').slick({
             slidesToShow: 6,
             arrows: false,
-            autoplay: true
+            autoplay: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
+                        centerPadding: 50
+                    }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
         });
     }
 

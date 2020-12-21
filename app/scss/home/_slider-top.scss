@@ -15,7 +15,12 @@
 
         @include medium {
             padding: 50px 0 70px;
+        }
 
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
     }
 
@@ -28,6 +33,15 @@
         line-height: 1;
         margin-bottom: 26px;
         @extend %title-limitation;
+
+        @include mobile {
+            max-width: none;
+            font-size: 55px;
+        }
+
+        @include small {
+            font-size: 38px;
+        }
     }
 
     &__subtitle {
@@ -38,6 +52,11 @@
         line-height: 1.5;
         margin-bottom: 62px;
         @extend %content-limitation;
+
+        @include mobile {
+            max-width: none;
+            font-size: 16px;
+        }
     }
 
     &__btn {
@@ -62,7 +81,7 @@
         }
 
         &:hover {
-            background-color: #80a1b3;
+            background-color: $accent-color;
         }
     }
 
@@ -71,6 +90,10 @@
         padding-top: 60px;
         z-index: 1;
         max-width: 640px;
+
+        @include mobile {
+            order: 0;
+        }
 
         img {
             object-fit: cover;
@@ -116,11 +139,16 @@
             font-size: 11px;
             line-height: 30px;
             outline: transparent;
+            transition: background-color 0.3s;
 
-            &:focus,
             &:active {
                 border: none;
                 outline-color: transparent;
+            }
+
+            &:hover {
+                background-color: $accent-color;
+                color: $body-color;
             }
         }
     }

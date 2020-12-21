@@ -1,5 +1,6 @@
 .partners {
     background-color: #f7f0e9;
+    width: 100%;
 
     ul.partners__list {
         display: flex;
@@ -9,14 +10,19 @@
         padding: 75px 0 85px;
         margin: 0;
 
+        @include medium {
+            padding: 50px 0;
+        }
+
         img {
             max-width: 200px;
             max-height: 200px;
             object-fit: cover;
+            margin: 0 auto;
         }
-    }
 
-    &__item {
-        margin-right: 30px;
+        .slick-slide {
+            padding: 0 20px;
+        }
     }
 }

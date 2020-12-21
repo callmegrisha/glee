@@ -58,6 +58,10 @@ $body-color: #fff;
     overflow: hidden;
 }
 
+%outline {
+    outline: 1px solid $btn-color;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
@@ -78,9 +82,14 @@ $body-color: #fff;
     }
 }
 
-
 @mixin mobile {
-    @media (max-width: 570px) {
+    @media (max-width: 670px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: 470px) {
         @content;
     }
 }

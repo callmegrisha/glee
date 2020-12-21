@@ -40,6 +40,10 @@ button {
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
+
+    @include mobile {
+        font-size: 24px;
+    }
 }
 
 .logo {

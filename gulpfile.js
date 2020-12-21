@@ -48,7 +48,7 @@ function scripts() {
 }
 
 const svgSprites = () => {
-    return src('./app/images/icons/**.svg')
+    return src(['./app/images/icons/**.svg', "!app/images/icons/sprite.svg"])
         .pipe(
             cheerio({
             run: ($) => {

@@ -5,6 +5,10 @@
     min-height: 500px;
     position: relative;
 
+    @include small {
+        min-height: 250px;
+    }
+
     &__link {
         position: absolute;
         background-image: url('../images/icons/sprite.svg#play');
@@ -19,5 +23,7 @@
         &:hover {
             filter: invert(54%) sepia(24%) saturate(289%) hue-rotate(157deg) brightness(103%) contrast(85%);
         }
+
+
     }
 }

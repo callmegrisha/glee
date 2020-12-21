@@ -2,19 +2,24 @@
     position: relative;
     display: flex;
     max-width: 870px;
-    min-height: 390px;
-    padding: 98px 150px 80px 386px;
+    // padding: 98px 150px 80px 386px;
+    padding: 6% 4% 4% 22%;
+    max-height: 390px;
     background-color: #feefe2;
-    justify-self: center;
+    margin-bottom: 30px;
 
     &__img {
         position: absolute;
-        bottom: 85px;
-        left: 136px;
+        // bottom: 85px;
+        bottom: 9vh;
+        // left: 136px;
+        left: 2vw;
+        // max-width: 230px;
+        max-width: 12vw;
 
         img {
             object-fit: cover;
-            max-width: 230px;
+            width: 100%;
         }
     }
 
@@ -22,6 +27,7 @@
         color: $accent-color;
         display: flex;
         flex-direction: column;
+        max-width: 400px;
     }
 
     &__title {
@@ -30,6 +36,10 @@
         line-height: 1.2;
         margin-bottom: 19px;
         @extend %title-limitation;
+
+        @include small {
+            font-size: 20px;
+        }
     }
 
     &__desc {
@@ -38,6 +48,10 @@
         line-height: 1.5;
         margin-bottom: 30px;
         @extend %content-limitation;
+
+        @include small {
+            font-size: 14px;
+        }
     }
 
     &__btn {
@@ -53,6 +67,12 @@
         line-height: 1;
         transition: background-color 0.3s;
         align-self: flex-start;
+        white-space: nowrap;
+
+        @include small {
+            padding: 15px;
+            font-size: 13px;
+        }
 
         &::after {
             position: absolute;
@@ -64,6 +84,10 @@
             right: 19px;
             top: 18px;
             filter: invert(34%) sepia(50%) saturate(286%) hue-rotate(154deg) brightness(95%) contrast(93%);
+
+            @include small {
+                display: none;
+            }
         }
 
         &:hover {
