@@ -32,6 +32,7 @@
         padding-top: 20px;
         padding-right: 25px;
         align-self: flex-start;
+        outline: transparent;
 
         &::after {
             position: absolute;
@@ -44,8 +45,16 @@
             top: 23px;
         }
 
+        &:focus {
+            @extend %outline-link;
+        }
+
         &:hover {
             color: $title-color;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
     }
 

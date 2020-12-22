@@ -6,12 +6,15 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: -20px;
     }
 
     &__item {
         padding-top: 90px;
         text-align: center;
         position: relative;
+        margin-bottom: 20px;
 
         &::before {
             position: absolute;

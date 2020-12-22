@@ -61,9 +61,18 @@
         transition: border-color 0.3s;
         border-bottom: 1px solid transparent;
         white-space: nowrap;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
 
         &:hover {
             border-color: $text-color;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
 
         @include medium {
@@ -106,9 +115,18 @@
     &__btn {
         @extend %btn-param;
         transition: background-color 0.5s;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline;
+        }
 
         &:hover {
             background-color: #80a1b3;
+        }
+
+        &:active {
+            @extend %outline;
         }
 
         &--search {

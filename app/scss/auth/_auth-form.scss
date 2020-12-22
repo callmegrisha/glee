@@ -54,10 +54,18 @@
         margin-bottom: 35px;
         transition: all 0.3s;
 
+        &:focus {
+            @extend %outline;
+        }
+
         &:hover {
             background-color: $body-color;
             border: 1px solid #a3bbc8;
             color: #243f4d;
+        }
+
+        &:active {
+            @extend %outline;
         }
     }
 
@@ -70,9 +78,18 @@
 
     &__forgot {
         transition: color 0.5s;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
 
         &:hover {
             color: red;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
     }
 }

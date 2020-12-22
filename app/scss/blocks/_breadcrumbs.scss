@@ -19,9 +19,18 @@
     &__link {
         @extend %rubik-regular;
         color: #737980;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
 
         &:hover {
             border-bottom: 1px solid #737980;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
 
         &--active {

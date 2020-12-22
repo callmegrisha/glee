@@ -51,9 +51,18 @@
 
     &__link {
         line-height: 2.1;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
 
         &:hover {
             border-bottom: 1px solid #7b7b7b;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
     }
 
@@ -185,8 +194,18 @@
     }
 
     &__nav-link {
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
+
         &:hover {
             border-bottom: 1px solid #7b7b7b;
+        }
+
+        &:active {
+            @extend %outline-link;
         }
     }
 }

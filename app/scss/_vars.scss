@@ -62,6 +62,10 @@ $body-color: #fff;
     outline: 1px solid $btn-color;
 }
 
+%outline-link {
+    border-bottom: 1px solid #7b7b7b;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }

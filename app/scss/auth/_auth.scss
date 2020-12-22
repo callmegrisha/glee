@@ -5,6 +5,11 @@
     margin: 0 auto;
     text-align: center;
 
+    @include mobile {
+        max-width: none;
+        width: 90%;
+    }
+
     &__not-register {
         display: block;
         @extend %rubik-regular;
@@ -35,10 +40,23 @@
         padding: 20px 150px;
         border: 1px solid $btn-color;
         transition: all 0.5s;
+        outline: transparent;
+
+        @include small {
+            padding: 20px 40px;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
 
         &:hover {
             background-color: $btn-color;
             color: $body-color;
+        }
+
+        &:active {
+            @extend %outline;
         }
     }
 }
