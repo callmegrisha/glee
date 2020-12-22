@@ -1,0 +1,41 @@
+.tabs {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+
+    @include small {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        @extend %dmsans-bold;
+        color: #8b8b8b;
+        font-size: 16px;
+        line-height: 1;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 33px;
+
+            @include small {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        &--active,
+        &:hover {
+            color: #191919;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &--active {
+            display: inherit;
+        }
+    }
+}

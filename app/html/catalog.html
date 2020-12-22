@@ -14,23 +14,9 @@
 
     <main class="main">
         
-        <div class="top">
-
-            <h2 class="top__title">Product List 1</h2>
-
-            <ul class="breadcrumbs">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Product List 1</a>
-                </li>
-
-            </ul>
-
-        </div>
+        @loop('./common/breadcrumbs.html', [
+            {"top__title": "Product List", "link": "Home", "final__link": "Product List"}
+        ])
 
         <section class="catalog">
 
@@ -38,54 +24,54 @@
 
                 <div class="catalog__inner">
 
-                    <aside class="catalog__filters">
+                    <div class="catalog__filters">
 
-                        <div class="filter-item">
+                        <div class="filter">
 
-                            <h3 class="filter-item__title">Category</h3>
+                            <h3 class="filter__title">Category</h3>
 
-                            <ul class="filter-item__categories">
+                            <ul class="filter__categories">
 
-                                <li class="filter-item__categories-item">
-                                    <a class="filter-item__categories-link" href="#">Chair</a>
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Chair</a>
                                 </li>
 
-                                <li class="filter-item__categories-item">
-                                    <a class="filter-item__categories-link" href="#">Table</a>
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Table</a>
                                 </li>
 
-                                <li class="filter-item__categories-item">
-                                    <a class="filter-item__categories-link" href="#">Lamp</a>
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Lamp</a>
                                 </li>
 
-                                <li class="filter-item__categories-item">
-                                    <a class="filter-item__categories-link" href="#">Watch</a>
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Watch</a>
                                 </li>
 
-                                <li class="filter-item__categories-item">
-                                    <a class="filter-item__categories-link" href="#">Clock</a>
+                                <li class="filter__categories-item">
+                                    <a class="filter__categories-link" href="#">Clock</a>
                                 </li>
 
                             </ul>
 
                         </div>
                         
-                        <div class="filter-item">
+                        <div class="filter">
 
-                            <h3 class="filter-item__title">Price</h3>
+                            <h3 class="filter__title">Price</h3>
 
-                            <form class="filter-item__range" action="#">
+                            <form class="filter__range" action="#">
 
-                                <input class="flter-item__range-input" type="text" 
+                                <input class="filter__range-input" type="text" 
                                 data-min="0"
                                 data-max="1000"
                                 data-from="100"
                                 data-to="500">
 
-                                <label class="filter-item__range-label">
-                                    <span class="filter-item__range-price">
-                                        <span class="filter-item__range-from"></span>
-                                        <span class="filter-item__range-to"></span>
+                                <label class="filter__range-label">
+                                    <span class="filter__range-price">
+                                        <span class="filter__range-from"></span>
+                                        <span class="filter__range-to"></span>
                                     </span>
                                 </label>
 
@@ -93,49 +79,49 @@
 
                         </div>
 
-                        <div class="filter-item">
+                        <div class="filter">
 
-                            <h3 class="filter-item__title">Brand</h3>
+                            <h3 class="filter__title">Brand</h3>
 
-                            <form class="filter-item__brand-form" action="#" >
+                            <form class="filter__brand-form" action="#" >
 
-                                <label class="filter-item__brand-label">
-                                    <input class="filter-item__brand-input" type="checkbox">
-                                    <div class="filter-item__brand-text">
-                                        <span class="filter-item__brand-name">RFL</span>
-                                        <span class="filter-item__brand-num">(10)</span>
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">RFL</span>
+                                        <span class="filter__brand-num">(10)</span>
                                     </div>
                                 </label>
 
-                                <label class="filter-item__brand-label">
-                                    <input class="filter-item__brand-input" type="checkbox">
-                                    <div class="filter-item__brand-text">
-                                        <span class="filter-item__brand-name">Brothers</span>
-                                        <span class="filter-item__brand-num">(21)</span>
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Brothers</span>
+                                        <span class="filter__brand-num">(21)</span>
                                     </div>
                                 </label>
 
-                                <label class="filter-item__brand-label">
-                                    <input class="filter-item__brand-input" type="checkbox">
-                                    <div class="filter-item__brand-text">
-                                        <span class="filter-item__brand-name">Regal</span>
-                                        <span class="filter-item__brand-num">(3)</span>
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Regal</span>
+                                        <span class="filter__brand-num">(3)</span>
                                     </div>
                                 </label>
 
-                                <label class="filter-item__brand-label">
-                                    <input class="filter-item__brand-input" type="checkbox">
-                                    <div class="filter-item__brand-text">
-                                        <span class="filter-item__brand-name">Nadia</span>
-                                        <span class="filter-item__brand-num">(14)</span>
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Nadia</span>
+                                        <span class="filter__brand-num">(14)</span>
                                     </div>
                                 </label>
 
-                                <label class="filter-item__brand-label">
-                                    <input class="filter-item__brand-input" type="checkbox">
-                                    <div class="filter-item__brand-text">
-                                        <span class="filter-item__brand-name">Otobi</span>
-                                        <span class="filter-item__brand-num">(6)</span>
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="checkbox">
+                                    <div class="filter__brand-text">
+                                        <span class="filter__brand-name">Otobi</span>
+                                        <span class="filter__brand-num">(6)</span>
                                     </div>
                                 </label>
 
@@ -143,46 +129,50 @@
 
                         </div>
 
-                        <div class="filter-item">
+                        <div class="recent-products">
 
-                            <h3 class="filter-item__title">Recent Products</h3>
+                            <h3 class="filter__title">Recent Products</h3>
 
-                            <div class="filter-item__product">
-                                <div class="filter-item__product-img">
-                                    <img src="images/recent-product-1.png" alt="pendant lamp">
-                                </div>
-                                <div class="filter-item__product-content">
-                                    <span class="filter-item__product-name">Pendant lamp</span>
-                                    <div class="filter-item__product-rating" data-rateyo-rating="4"></div>
-                                    <span class="filter-item__product-price">23$</span>
-                                </div>
-                            </div>
+                            <ul class="recent-products__list">
 
-                            <div class="filter-item__product">
-                                <div class="filter-item__product-img">
-                                    <img src="images/recent-product-2.png" alt="pendant lamp">
-                                </div>
-                                <div class="filter-item__product-content">
-                                    <span class="filter-item__product-name">Pendant lamp</span>
-                                    <div class="filter-item__product-rating" data-rateyo-rating="4"></div>
-                                    <span class="filter-item__product-price">23$</span>
-                                </div>
-                            </div>
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-1.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
 
-                            <div class="filter-item__product">
-                                <div class="filter-item__product-img">
-                                    <img src="images/recent-product-3.png" alt="pendant lamp">
-                                </div>
-                                <div class="filter-item__product-content">
-                                    <span class="filter-item__product-name">Pendant lamp</span>
-                                    <div class="filter-item__product-rating" data-rateyo-rating="4"></div>
-                                    <span class="filter-item__product-price">23$</span>
-                                </div>
-                            </div>
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-2.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
+
+                                <li class="recent-products__item">
+                                    <div class="recent-products__img">
+                                        <img src="images/recent-product-3.png" alt="pendant lamp">
+                                    </div>
+                                    <div class="recent-products__content">
+                                        <a class="recent-products__name" href="#">Pendant lamp</a>
+                                        <div class="recent-products__rating" data-rateyo-rating="4"></div>
+                                        <span class="recent-products__price">23$</span>
+                                    </div>
+                                </li>
+
+                            </ul>
 
                         </div>
 
-                    </aside>
+                    </div>
                     
                     <div class="catalog__grid">
                         

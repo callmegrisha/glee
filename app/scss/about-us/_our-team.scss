@@ -1,0 +1,222 @@
+.our-team {
+    padding: 120px 0;
+
+    @include medium {
+        padding: 40px 0 100px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @include medium {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__invite {
+        max-width: 310px;
+        width: 100%;
+        margin-right: 70px;
+
+        @include lg {
+            margin-right: 20px;
+        }
+
+        @include medium {
+            max-width: none;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+        color: $accent-color;
+    }
+
+    &__text {
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $accent-color;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        position: relative;
+        display: inline-block;
+        background-color: $btn-color;
+        padding: 18px 60px 18px 18px;
+        border-radius: 10px;
+        @extend %dmsans-medium;
+        color: $body-color;
+        font-size: 15px;
+        line-height: 1.2;
+        transition: background-color 0.3s;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../images/icons/sprite.svg#arrow-about');
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 20px;
+            right: 25px;
+            top: 20px;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:hover {
+            background-color: $text-color;
+            color: $body-color;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+    }
+
+
+    &__list {
+        max-width: 770px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        column-gap: 30px;
+        row-gap: 115px;
+
+        @include small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 0;
+            column-gap: 0;
+            margin-bottom: -115px;
+        }
+    }
+
+    &__person {
+        position: relative;
+        max-width: 370px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        justify-self: center;
+
+        @include small {
+            max-width: 300px;
+            margin-bottom: 115px;
+        }
+    }
+
+
+    &__img {
+        max-width: 370px;
+
+        img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        max-width: 325px;
+        width: 100%;
+        background-color: $body-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+        position: absolute;
+        bottom: -75px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+
+        @include small {
+            padding: 10px;
+        }
+    }
+
+
+    &__record {
+        margin-right: 30px;
+    }
+
+    &__fullname {
+        display: block;
+        @extend %dmsans-bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: $text-color;
+        margin-bottom: 20px;
+
+        @include small {
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__position {
+        display: block;
+        @extend %rubik-regular;
+        color: #565872;
+        font-size: 16px;
+    }
+
+    &__network {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 7px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        background-color: #f6f6f6;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        transition: background-color 0.3s;
+        outline: transparent;
+
+        @include small {
+            width: 30px;
+            height: 30px;
+        }
+
+        svg {
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            fill: #888888;
+        }
+
+        &:focus {
+            border: 1px solid #888888;
+        }
+
+        &:hover {
+            svg {
+                fill: $body-color;
+            }
+
+            background-color: #888888;
+        }
+
+        &:active {
+            border: 1px solid #888888;
+        }
+    }
+}

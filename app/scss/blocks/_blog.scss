@@ -1,0 +1,68 @@
+.blog {
+    padding: 0 0 25px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        background-color: #f7f0e9;
+        top: 60%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 47px;
+    }
+
+    &__more {
+        position: relative;
+        @extend %dmsans-bold;
+        color: $accent-color;
+        font-size: 16px;
+        padding-top: 20px;
+        padding-right: 25px;
+        align-self: flex-start;
+        outline: transparent;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 13px;
+            background-image: url('../images/icons/arrow-triangle.svg');
+            background-repeat: no-repeat;
+            right: 0;
+            top: 23px;
+        }
+
+        &:focus {
+            @extend %outline-link;
+        }
+
+        &:hover {
+            color: $title-color;
+        }
+
+        &:active {
+            @extend %outline-link;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -30px -30px 0;
+    }
+}

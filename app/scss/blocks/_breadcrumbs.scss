@@ -1,0 +1,45 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+
+            &::after {
+                position: absolute;
+                content: '/';
+                right: -13px;
+            }
+        }
+    }
+
+    &__link {
+        @extend %rubik-regular;
+        color: #737980;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #737980;
+        }
+
+        &:active {
+            @extend %outline-link;
+        }
+
+        &--active {
+            color: #222933;
+
+            &:hover {
+                border: none;
+            }
+
+        }
+    }
+}

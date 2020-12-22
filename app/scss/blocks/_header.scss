@@ -1,0 +1,213 @@
+.header {
+    padding: 50px 0 43px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include medium {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        @include medium {
+            z-index: 2;
+        }
+    }
+
+    &--active {
+        &::after {
+            @include medium {
+                position: absolute;
+                content: '';
+                background-color: #cce2ed;
+                top: 0;
+                right: 0;
+                bottom: -81vh;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+    @include medium {
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+.menu {
+    display: flex;
+
+    @include medium {
+        display: none;
+        text-align: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+
+        @include medium {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 12px;
+        color: $text-color;
+        transition: border-color 0.3s;
+        border-bottom: 1px solid transparent;
+        white-space: nowrap;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
+
+        &:hover {
+            border-color: $text-color;
+        }
+
+        &:active {
+            @extend %outline-link;
+        }
+
+        @include medium {
+            display: block;
+            font-size: 20px;
+            line-height: 2;
+            padding: 20px 0;
+        }
+    }
+
+    &--active {
+        @include medium {
+            display: block;
+            position: absolute;
+            top: 130%;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    @include medium {
+        display: none;
+        flex-wrap: nowrap;
+        transform: translate(-50px, 80px);
+        z-index: 2;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+
+
+    &__btn {
+        @extend %btn-param;
+        transition: background-color 0.5s;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:hover {
+            background-color: #80a1b3;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        &--search {
+            background-color: #edf1f4;
+            margin-right: 20px;
+            fill: #26414f;
+
+            @include medium {
+                margin-right: 0;
+            }
+        }
+
+        &--toggler {
+            background-color: $btn-color;
+            fill: $body-color;
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__doublebtn {
+        background-color: #fcd7b6;
+        position: relative;
+        transition: background-color 0.5s;
+        fill: #41535b;
+
+        &:hover {
+            background-color: #f3c194;
+        }
+
+        &--wish {
+            padding: 17px 30px 17px 40px;
+            border-radius: 25px 0 0 25px;
+
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 32px;
+                background-color: #fde7d3;
+                top: 9px;
+                right: 0;
+                z-index: 1;
+            }
+        }
+
+        &--basket {
+            padding: 17px 40px 17px 30px;
+            border-radius: 0 25px 25px 0;
+            margin-right: 20px;
+
+            @include medium {
+                margin-left: -5px;
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    &__num {
+        position: absolute;
+        background-color: $body-color;
+        padding: 8px 4px;
+        border-radius: 50%;
+        @extend %dmsans-regular;
+        font-size: 10px;
+        color: $accent-color;
+        top: 11px;
+    }
+
+    &--active {
+        @include medium {
+            display: block;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+}

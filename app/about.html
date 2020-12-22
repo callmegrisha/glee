@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee</title>
+    <title>Glee | About Us</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +17,7 @@
         <nav class="header__inner">
 
             <a class="logo header__logo" href="#">
-                <img class="logo__img" src="images/icons/logo.png" alt="logotype">
+                <img src="images/icons/logo.png" alt="logotype">
             </a>
 
             <ul class="menu">
@@ -90,25 +90,23 @@
 
     <main class="main">
 
-        <h1 class="about__title">Welcome to About Us page</h1>
-        
         <div class="top">
 
-            <h2 class="top__title">About Us</h2>
+    <h1 class="top__title">About Us</h1>
 
-            <ul class="breadcrumbs">
+    <ul class="breadcrumbs">
+        
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link breadcrumbs__link--active">About Us</span>
+        </li>
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">About Us</a>
-                </li>
+    </ul>
 
-            </ul>
-
-        </div>
+</div>
 
         <section class="about-us">
 
@@ -116,41 +114,41 @@
 
                 <div class="about-us__content">
 
-                    <div class="about-us__img">
-                        <img src="images/about-us-1.jpg" alt="man with notebook">
-                    </div>
+                    <div class="about-us__img" style="background-image: url('images/about-us-1.jpg');"></div>
 
                     <div class="about-us__text">
 
                         <span class="about-us__experience">
-                            Years Experience Working
+                            <span>12</span> Years Experience Working
                         </span>
 
-                        <span class="about-us__title">Mission of our creative house</span>
+                        <h2 class="about-us__title">Mission of our creative house</h2>
 
-                        <p class="about-us__desc">
+                        <div class="about-us__desc">
+                           <p>
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                             velit esse cillum
-                        </p>
+                           </p> 
+                        </div>
 
-                        <div class="about-us__progress">
+                        <ul class="about-us__progress">
 
-                            <div class="about-us__item about-us__item--projects">
+                            <li class="about-us__item about-us__item--projects">
                                 <span class="about-us__num">520+</span>
                                 <span class="about-us__name">Projects</span>
-                            </div>
+                            </li>
 
-                            <div class="about-us__item about-us__item--revenue">
+                            <li class="about-us__item about-us__item--revenue">
                                 <span class="about-us__num">$4M</span>
                                 <span class="about-us__name">Revenue</span>
-                            </div>
+                            </li>
 
-                            <div class="about-us__item about-us__item--awards">
+                            <li class="about-us__item about-us__item--awards">
                                 <span class="about-us__num">250</span>
                                 <span class="about-us__name">Awards</span>
-                            </div>
+                            </li>
 
-                        </div>
+                        </ul>
 
                     </div>
 
@@ -235,17 +233,25 @@
 
                                 </div>
 
-                                <div class="our-team__network">
+                                <ul class="our-team__network">
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/instagram.svg" alt="instagram">
-                                    </a>
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#" >
+                                            <svg width="17" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#">
+                                            <svg width="23" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/google.svg" alt="google">
-                                    </a>
-
-                                </div>
+                                </ul>
 
                             </div>
 
@@ -267,17 +273,25 @@
 
                                 </div>
 
-                                <div class="our-team__network">
+                                <ul class="our-team__network">
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/instagram.svg" alt="instagram">
-                                    </a>
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#" >
+                                            <svg width="17" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#">
+                                            <svg width="23" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/google.svg" alt="google">
-                                    </a>
-
-                                </div>
+                                </ul>
 
                             </div>
 
@@ -299,17 +313,25 @@
 
                                 </div>
 
-                                <div class="our-team__network">
+                                <ul class="our-team__network">
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/instagram.svg" alt="instagram">
-                                    </a>
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#" >
+                                            <svg width="17" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#">
+                                            <svg width="23" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/google.svg" alt="google">
-                                    </a>
-
-                                </div>
+                                </ul>
 
                             </div>
 
@@ -331,17 +353,24 @@
 
                                 </div>
 
-                                <div class="our-team__network">
+                                <ul class="our-team__network">
 
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/instagram.svg" alt="instagram">
-                                    </a>
-
-                                    <a class="our-team__social" href="#" >
-                                        <img src="images/icons/google.svg" alt="google">
-                                    </a>
-
-                                </div>
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#" >
+                                            <svg width="17" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="our-team__item">
+                                        <a class="our-team__link" href="#">
+                                            <svg width="23" height="17">
+                                                <use xlink:href="images/icons/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
 
                             </div>
 
@@ -371,7 +400,7 @@
 
             <div class="blog__items">
 
-                <div class="blog-item">
+                <article class="blog-item">
 
                     <img class="blog-item__image" src="images/blog/article-1.jpg" alt="blog image">
 
@@ -384,9 +413,9 @@
 
                         <div class="blog-item__details">
 
-                            <time class="blog-item__date">28 january, 2020</time>
+                            <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
 
-                            <span class="blog-item__author">by admin</span>
+                            <span class="blog-item__detail blog-item__detail--author">by admin</span>
 
                         </div>
 
@@ -394,9 +423,9 @@
 
                     <a class="blog-item__link" href="#">Read more</a>
 
-                </div>
+                </article>
 
-                <div class="blog-item">
+                <article class="blog-item">
 
                     <img class="blog-item__image" src="images/blog/article-2.jpg" alt="blog image">
 
@@ -409,9 +438,9 @@
 
                         <div class="blog-item__details">
 
-                            <time class="blog-item__date">28 january, 2020</time>
+                            <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
 
-                            <span class="blog-item__author">by admin</span>
+                            <span class="blog-item__detail blog-item__detail--author">by admin</span>
 
                         </div>
 
@@ -419,12 +448,11 @@
 
                     <a class="blog-item__link" href="#">Read more</a>
 
-                </div>
+                </article>
 
-                <div class="blog-item">
+                <article class="blog-item">
 
                     <img class="blog-item__image" src="images/blog/article-3.jpg" alt="blog image">
-
 
                     <div class="blog-item__info">
 
@@ -434,9 +462,9 @@
 
                         <div class="blog-item__details">
 
-                            <time class="blog-item__date">28 january, 2020</time>
+                            <time class="blog-item__detail blog-item__detail--date">28 january, 2020</time>
 
-                            <span class="blog-item__author">by admin</span>
+                            <span class="blog-item__detail blog-item__detail--author">by admin</span>
 
                         </div>
 
@@ -444,7 +472,7 @@
 
                     <a class="blog-item__link" href="#">Read more</a>
 
-                </div>
+                </article>
 
             </div>
 
@@ -479,6 +507,27 @@
             <li class="partners__item">
                 <img class="partners__logo" src="images/partners/partner-5.png" alt="Vintage">
             </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-1.png" alt="Peterson & Stephanie">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-2.png" alt="KMN Konsulting">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-3.png" alt="Chainforce">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-4.png" alt="Nextg3n">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-5.png" alt="Vintage">
+            </li>
+
         </ul>
 
     </div>
@@ -497,7 +546,7 @@
             <div class="footer__column footer__column--contacts">
 
                 <a class="logo footer__logo" href="# ">
-                    <img class="logo__img" src="images/icons/logo.png" alt="logotype ">
+                    <img src="images/icons/logo.png" alt="logotype">
                 </a>
 
                 <address class="footer__contacts">

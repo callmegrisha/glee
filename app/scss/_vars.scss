@@ -1,4 +1,5 @@
 $accent-color: #243f4d;
+$text-color: #436372;
 $bg-color: #fef7f0;
 $btn-color: #a3bbc8;
 $title-color: #191919;
@@ -31,7 +32,7 @@ $body-color: #fff;
 }
 
 %poppins-bold {
-    font-family: "Poppins"sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
 
@@ -39,14 +40,6 @@ $body-color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-%arrow-right {
-    background-image: url('../images/icons/arrow-right.svg');
-    width: 22px;
-    height: 9px;
-    right: 19px;
-    top: 25px;
 }
 
 %title-limitation {
@@ -65,10 +58,12 @@ $body-color: #fff;
     overflow: hidden;
 }
 
-%h1-title {
-    opacity: 0;
-    line-height: 1;
-    font-size: 0;
+%outline {
+    outline: 1px solid $btn-color;
+}
+
+%outline-link {
+    border-bottom: 1px solid #7b7b7b;
 }
 
 @function max($numbers...) {
@@ -77,4 +72,28 @@ $body-color: #fff;
 
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
+}
+
+@mixin lg {
+    @media (max-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 670px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: 470px) {
+        @content;
+    }
 }

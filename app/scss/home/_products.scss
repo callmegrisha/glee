@@ -1,0 +1,18 @@
+.products {
+    padding: 36px 0 100px;
+
+    @include medium {
+        padding: 36px 0 50px;
+    }
+
+    &__catalog {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 140px;
+
+        @include lg {
+            margin-bottom: 40px;
+        }
+    }
+}

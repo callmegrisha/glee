@@ -1,0 +1,23 @@
+.new-design {
+    padding: 0 0 110px;
+
+    @include medium {
+        padding: 0px 0 50px;
+    }
+
+    &__inner {
+        margin-bottom: 106px;
+
+        @include medium {
+            margin-bottom: 60px;
+        }
+
+    }
+
+    &__catalog {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+}

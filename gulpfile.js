@@ -7,6 +7,7 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const svgSprite = require('gulp-svg-sprite');
+const cheerio = require("gulp-cheerio");
 const fileinclude = require('gulp-file-include');
 
 
@@ -46,17 +47,26 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
-function svgSprites() {
-    return src('app/images/**.svg')
+const svgSprites = () => {
+    return src(['./app/images/icons/**.svg', "!app/images/icons/sprite.svg"])
+        .pipe(
+            cheerio({
+            run: ($) => {
+                $("[fill]").removeAttr("fill");
+                $("[stroke]").removeAttr("stroke");
+                $("[style]").removeAttr("style");
+            },
+            parserOptions: { xmlMode: true },
+            })
+        )
         .pipe(svgSprite({
-            mode: {
-                stack: {
-
-                    sprite: '../sprite.svg'
-                }
-            }
+             mode: {
+                 stack: {
+                     sprite: "../sprite.svg"
+                 }
+             }
         }))
-        .pipe(dest('./app/images'))
+        .pipe(dest('./app/images/icons'));
 }
 
 function images() {
@@ -72,7 +82,7 @@ function images() {
                 ]
             })
         ]))
-        .pipe(dest('dist/images'))
+        .pipe(dest('dist/images'));
 }
 
 const htmlInclude = () => {
@@ -105,6 +115,7 @@ function watching() {
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
     watch('./app/html/*.html', htmlInclude);
+    watch('./src/img/**.svg', svgSprites);
 }
 
 exports.htmlInclude = htmlInclude;
@@ -117,4 +128,4 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(htmlInclude, styles, scripts, browsersync, watching);
+exports.default = parallel(htmlInclude, svgSprites, styles, scripts, browsersync, watching);

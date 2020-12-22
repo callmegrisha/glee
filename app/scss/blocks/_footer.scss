@@ -1,0 +1,211 @@
+.footer {
+    padding: 80px 0 40px;
+    @extend %rubik-regular;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 55px;
+        border-bottom: 1px solid #dae4e9;
+
+        @include mobile {
+            justify-content: space-around;
+        }
+
+        @include small {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+
+    &__contacts {
+        line-height: 2;
+        font-style: normal;
+    }
+
+    &__column {
+
+        &--contacts {
+            max-width: 200px;
+        }
+
+        &--services {
+            max-width: 120px;
+        }
+
+        &--account {
+            max-width: 100px;
+        }
+
+        &--form {
+            max-width: 270px;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+    }
+
+    &__link {
+        line-height: 2.1;
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #7b7b7b;
+        }
+
+        &:active {
+            @extend %outline-link;
+        }
+    }
+
+    &__logo,
+    &__title {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    &__contacts span,
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__title {
+        padding-top: 16px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+
+        @include small {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 41px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    &__input {
+        max-width: 170px;
+        width: 100%;
+        height: 38px;
+        background-color: $bg-color;
+        padding: 13px 16px;
+        border: none;
+        font-size: 12px;
+        line-height: 1;
+
+        &::placeholder {
+            color: #234969;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        @include mobile {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__btn {
+        padding: 13px 16px;
+        height: 40px;
+        background-color: $btn-color;
+        line-height: 1;
+        color: #fff;
+        margin-left: -10px;
+        transition: background-color 0.3s;
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:hover {
+            background-color: $accent-color;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        @include mobile {
+            display: block;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    &__bottom {
+        padding: 23px 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include small {
+            justify-content: center;
+        }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__nav-item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 17px;
+                background-color: #7b7b7b;
+                top: 0px;
+                right: -15px;
+            }
+        }
+    }
+
+    &__nav-link {
+        outline: transparent;
+
+        &:focus {
+            @extend %outline-link;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #7b7b7b;
+        }
+
+        &:active {
+            @extend %outline-link;
+        }
+    }
+}
