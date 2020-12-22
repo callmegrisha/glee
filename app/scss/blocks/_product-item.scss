@@ -34,6 +34,10 @@
         }
     }
 
+    &__content {
+        text-align: center;
+    }
+
     &__title {
         @extend %dmsans-medium;
         font-size: 16px;
@@ -82,6 +86,99 @@
                 top: 30%;
                 left: 30%;
             }
+        }
+    }
+
+    &__rating {
+        display: none;
+    }
+
+    &__text {
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $accent-color;
+        display: none;
+    }
+
+    &--list {
+        @extend %rubik-regular;
+        max-width: 870px;
+        width: 100%;
+        flex-direction: row;
+        box-shadow: none;
+        padding: 0;
+
+
+        .product-item__img {
+            margin: 0;
+            padding: 80px 25px;
+            border: 3px solid #f2f2f2;
+            background-color: #fefefe;
+            margin-right: 60px;
+            height: 500px;
+            max-width: 370px;
+            width: 100%;
+
+            img {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        .product-item__content {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            max-width: 440px;
+        }
+
+        .product-item__icons {
+            transform: translate(45px, 150px);
+            display: block;
+            opacity: 1;
+        }
+
+        .product-item__btn--search {
+            display: none;
+        }
+
+        .product-item__title {
+            margin: 0;
+            font-size: 40px;
+            justify-self: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .product-item__btn {
+            border-radius: 0;
+            border: 1px solid $btn-color;
+            box-shadow: none;
+        }
+
+        .product-item__rating {
+            display: block;
+            margin-bottom: 35px;
+        }
+
+        .jq-ry-container {
+            padding: 0;
+        }
+
+        .product-item__text {
+            display: block;
+            order: 1;
+
+            p {
+                @extend %content-limitation;
+            }
+
+        }
+
+        .product-item__price {
+            font-size: 30px;
+            color: #333333;
+            margin-bottom: 35px;
         }
     }
 }

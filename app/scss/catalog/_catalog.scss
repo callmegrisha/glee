@@ -3,7 +3,6 @@
 
     &__inner {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 100px;
     }
 
@@ -13,10 +12,34 @@
         margin-right: 30px;
     }
 
+    &__view {
+        max-width: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        background-color: $body-color;
+        fill: $text-color;
+
+        &:focus {
+            fill: $accent-color;
+        }
+
+        &:hover {
+            fill: $accent-color;
+        }
+
+        &:active {
+            fill: $accent-color;
+        }
+    }
+
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         column-gap: 30px;
-        row-gap: 40px;
     }
 }
