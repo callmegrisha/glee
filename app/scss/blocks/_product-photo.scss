@@ -1,0 +1,39 @@
+.product-photo {
+    max-width: 550px;
+    display: flex;
+
+    &__small {
+        max-width: 140px;
+        margin-right: 25px;
+    }
+
+    &__small-item {
+        max-width: 140px;
+        height: 160px;
+        padding: 15px;
+        border: 2px solid #f2f2f2;
+        background-color: #fefefe;
+        margin-bottom: 19px;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__large-item {
+        max-width: 350px;
+        min-height: 530px;
+        padding: 63px 77px;
+        border: 2px solid #f2f2f2;
+        background-color: #fefefe;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

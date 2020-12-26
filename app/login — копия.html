@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee | Blog</title>
+    <title>Glee</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +17,7 @@
         <nav class="header__inner">
 
             <a class="logo header__logo" href="#">
-                <img class="logo__img" src="images/icons/logo.png" alt="logotype">
+                <img src="images/icons/logo.png" alt="logotype">
             </a>
 
             <ul class="menu">
@@ -92,38 +92,57 @@
 
         <div class="top">
 
-            <h2 class="top__title">Log in</h2>
+    <h1 class="top__title">Log in</h1>
 
-            <ul class="breadcrumbs">
+    <ul class="breadcrumbs">
+        
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link breadcrumbs__link--active">Log in</span>
+        </li>
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Log in</a>
-                </li>
+    </ul>
 
-            </ul>
+</div>
 
-        </div>
+        <div class="auth">
 
-        <section class="articles">
-            
-            <div class="container container--small">
+            <form class="auth-form" action="#">
 
-                <div class="articles__inner">
+                <label class="auth-form__label">
+                    Username or email address *
+                    <input class="auth-form__input" type="text" required>
+                </label>
 
-                    <div class="articles__content">
-                    </div>
+                <label class="auth-form__label">
+                    Password *
+                    <input class="auth-form__input" type="password"  required>
+                </label>
 
-                    <aside class="articles__navigation"></aside>
+                <button class="auth-form__btn" type="submit">Login</button>
+
+                <div class="auth-form__pass">
+
+                    <label class="auth-form__label auth-form__label--checkbox" for="#">
+                        <input class="auth-form__input auth-form__input--checkbox" type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a class="auth-form__forgot" href="#">Lost your password?</a>
 
                 </div>
 
-            </div>
+            </form>
 
-        </section>
+            <span class="auth__not-register">Not registered? No problem</span>
+
+            <a class="auth__create-acc" href="#">Create an account</a>
+
+        </div>
+
 
         <section class="partners">
 
@@ -150,6 +169,27 @@
             <li class="partners__item">
                 <img class="partners__logo" src="images/partners/partner-5.png" alt="Vintage">
             </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-1.png" alt="Peterson & Stephanie">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-2.png" alt="KMN Konsulting">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-3.png" alt="Chainforce">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-4.png" alt="Nextg3n">
+            </li>
+
+            <li class="partners__item">
+                <img class="partners__logo" src="images/partners/partner-5.png" alt="Vintage">
+            </li>
+
         </ul>
 
     </div>
@@ -168,7 +208,7 @@
             <div class="footer__column footer__column--contacts">
 
                 <a class="logo footer__logo" href="# ">
-                    <img class="logo__img" src="images/icons/logo.png" alt="logotype ">
+                    <img src="images/icons/logo.png" alt="logotype">
                 </a>
 
                 <address class="footer__contacts">
