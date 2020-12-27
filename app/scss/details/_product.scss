@@ -5,4 +5,37 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__description {
+        @extend %rubik-regular;
+        color: $accent-color;
+    }
+
+    &__name {
+        @extend %rubik-regular;
+        font-size: 40px;
+        margin-bottom: 25px;
+        color: #333333;
+    }
+
+    &__rate {
+        padding: 0;
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        font-size: 15px;
+        line-height: 1;
+        color: $body-color;
+        background-color: $btn-color;
+        text-transform: uppercase;
+        padding: 20px 50px;
+        border-radius: 5px;
+    }
 }

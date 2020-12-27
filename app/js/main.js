@@ -92,25 +92,22 @@ $(function() {
         $('.product-item').removeClass('product-item--list');
     });
 
-    
-    $('.product-photo__small').slick({
-        asNavFor: '.product-photo__large',
-        focusOnSelect: true,
+    $('.product-slider__main').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
-        slidesToShow: 3,
-        vertical: true,
-        draggable: false,
-        dots: false
-    });
-
-    $('.product-photo__large').slick({
-        asNavFor: '.product-photo__small',
-        draggable: false,
+        asNavFor: '.product-slider__nav',
         arrows: false,
         fade: true,
-        centerMode: true,
-        focusOnSelect: true,
-        vertical: true
+        draggable: false
+    });
+
+    $('.product-slider__nav').slick({
+        slidesToShow: 3,
+        asNavFor: '.product-slider__main',
+        arrows: false,
+        vertical: true,
+        draggable: false,
+        focusOnSelect: true
     });
 
 });
