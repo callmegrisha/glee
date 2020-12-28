@@ -162,23 +162,465 @@
                         
                         <form class="product__form" action="#">
 
-                            <input class="product__num" type="number"  value="1" min="1">
+                            <input class="product__num" type="number" value="1" min="1">
                             
                             <button class="product__btn" type="submit">add to cart</button>
 
                         </form>
                         
-                        <ul class="product-info">
+                        <ul class="product__list">
 
-                            <li class="product-info__item">SKU: 014</li>
+                            <li class="product__info">SKU: 014</li>
 
-                            <li class="product-info__item">Category: Lights</li>
+                            <li class="product__info">Category: Lights</li>
 
-                            <li class="product-info__item">Tag: <a href="#">Decorative</a></li>
+                            <li class="product__info">Tag: <a href="#">Decorative</a></li>
 
                         </ul>
 
                     </div>
+
+                </div>
+
+                <div class="product__tabs">
+
+                    <ul class="tabs">
+
+                        <li class="tabs__item tabs__item--active" data-tab="info-1">
+                            Description
+                        </li>
+    
+                        <li class="tabs__item" data-tab="info-2">
+                            Additional information
+                        </li>
+    
+                        <li class="tabs__item" data-tab="info-3">
+                            Reviews (2)
+                        </li>
+    
+                    </ul>
+    
+                    <div class="tabs__inner">
+    
+                        <div class="tabs__content tabs__content--active" id="info-1">
+
+                            <div class="product__tabs-content">
+
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                            </div>
+
+                        </div>
+    
+                        <div class="tabs__content" id="info-2">
+                            content-2
+                        </div>
+    
+                        <div class="tabs__content" id="info-3">
+                            content-3
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="related-products">
+
+            <div class="container container--small">
+
+                <h2 class="title related-products__title">Related products</h2>
+
+                <div class="related-products__slider">
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-1.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Wooden radio
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-2.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Wooden chair
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-3.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                White chair
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-4.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Retro Table
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-5.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Wooden radio
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-6.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Wooden chair
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-7.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                White chair
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="product-item">
+
+                        <div class="product-item__img">
+                            <img src="images/products/products-8.png" alt="chair">
+                        </div>
+
+                        <div class="product-item__icons">
+
+                            <a class="product-item__btn product-item__btn--search" href="#">
+                                <svg width="16" height="16">
+                                    <use xlink:href="images/icons/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+
+                            <button class="product-item__btn product-item__btn--cart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                                </svg>
+                            </button>
+
+                            <button class="product-item__btn product-item__btn--heart">
+                                <svg width="19" height="17">
+                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="product-item__content">
+
+                            <h3 class="product-item__title">
+                                Retro Table
+                            </h3>
+
+                            <div class="product-item__rating" data-rateyo-rating="4"></div>
+
+                            <div class="product-item__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+
+                            <span class="product-item__price">$29.00</span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 

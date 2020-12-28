@@ -9,10 +9,10 @@ $(function() {
 
         let tabId = $(this).attr('data-tab');
 
-        $('ul.tabs li').removeClass('tab--active');
+        $('ul.tabs li').removeClass('tabs__item--active');
         $('.tabs__content').removeClass('tabs__content--active');
 
-        $(this).addClass('tab--active');
+        $(this).addClass('tabs__item--active');
         $("#" + tabId).addClass('tabs__content--active');
     });
 
@@ -108,6 +108,15 @@ $(function() {
         vertical: true,
         draggable: false,
         focusOnSelect: true
+    });
+
+    $('.product__num').styler();
+
+    $('.related-products__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-prev" type="button"><img src="images/icons/slider-arrow-left.svg" alt="arrow-left"></button>',
+        nextArrow: '<button class="slick-next" type="button"><img src="images/icons/slider-arrow-right.svg" alt="arrow-right"></button>',
     });
 
 });
