@@ -9,7 +9,7 @@
     &__filters {
         max-width: 270px;
         width: 100%;
-        margin-right: 30px;
+        margin-right: 60px;
     }
 
     &__view {
@@ -40,6 +40,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        column-gap: 30px;
+        margin: 0 -30px -30px;
+
+        .product-item {
+            margin: 0 30px 30px 0;
+        }
+
     }
 }

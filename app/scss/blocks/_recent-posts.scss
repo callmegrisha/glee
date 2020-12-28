@@ -1,0 +1,47 @@
+.recent-posts {
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+
+        margin-right: 20px;
+
+        img {
+            max-width: 70px;
+            max-height: 70px;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        margin-bottom: 12px;
+        @extend %title-limitation;
+    }
+
+    .blog-item__detail {
+        display: block;
+        font-size: 12px;
+        color: #9a9a9a;
+        text-transform: uppercase;
+        filter: invert(70%) sepia(8%) saturate(76%) hue-rotate(320deg) brightness(86%) contrast(91%);
+        margin-right: 0;
+        padding-left: 23px;
+
+        &::before {
+            width: 15px;
+            height: 15px;
+            left: 0;
+            top: -2px;
+        }
+    }
+}
