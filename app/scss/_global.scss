@@ -4,10 +4,10 @@ body {
 }
 
 body {
-    @extend %rubik-medium;
-    font-size: 14px;
+    @extend %rubik-regular;
+    font-size: 16px;
     line-height: 1.2;
-    color: #7b7b7b;
+    color: $accent-color;
     display: flex;
     flex-direction: column;
     background-color: $body-color;

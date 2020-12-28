@@ -1,12 +1,26 @@
 .articles {
     padding: 120px 0;
 
+    &__inner {
+        display: flex;
+        margin-bottom: 75px;
+    }
+
+    &__content {
+        margin-right: 70px;
+    }
+
     &__item {
         max-width: 830px;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
     }
 
     &__img {
         position: relative;
+        margin-bottom: 41px;
 
         img {
             width: 100%;
@@ -15,14 +29,83 @@
         }
     }
 
-    .blog-item__details {
-        position: absolute;
-        bottom: 0;
-        padding: 30px 22px 30px 50px;
-        background-color: $btn-color;
-        border: none;
-        color: $body-color;
+    .blog-item {
+        &__details {
+            position: absolute;
+            bottom: 0;
+            padding: 30px 22px 30px 50px;
+            background-color: $btn-color;
+            border: none;
+
+        }
+
+        &__detail {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(306deg) brightness(103%) contrast(101%);
+        }
     }
 
+    &__info {
+        max-width: 800px;
+        width: 100%;
+    }
 
+    &__title {
+        @extend %rubik-regular;
+        font-size: 36px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        line-height: 1.9;
+        margin-bottom: 40px;
+
+        p {
+            @extend %content-limitation;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 25px 85px 25px 20px;
+        color: $btn-color;
+        font-size: 15px;
+        line-height: 1;
+        border: 1px solid $btn-color;
+        position: relative;
+        transition: background-color 0.3s;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../images/icons/sprite.svg#slider-arrow-right');
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 22px;
+            right: 19px;
+            top: 24px;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:hover {
+            border-color: $accent-color;
+            background-color: $accent-color;
+            color: $body-color;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+    }
+
+    &__navigation {
+        max-width: 270px;
+    }
+
+    .pagination {
+        justify-content: flex-start;
+    }
 }
