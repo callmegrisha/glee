@@ -37,6 +37,10 @@
             background-size: 20px 40px;
             background-position: 360px 50%;
         }
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
     }
 
     &__text {
@@ -58,6 +62,10 @@
 
         &:active {
             outline: 1px solid $accent-color;
+        }
+
+        &::placeholder {
+            text-transform: uppercase;
         }
     }
 
