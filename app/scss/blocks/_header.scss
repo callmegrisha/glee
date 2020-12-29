@@ -47,6 +47,7 @@
 
 .menu {
     display: flex;
+    @extend %rubik-medium;
 
     @include medium {
         display: none;
