@@ -65,7 +65,7 @@ $(function() {
         $('.partners__list').slick({
             slidesToShow: 6,
             arrows: false,
-            autoplay: true,
+            // autoplay: true,
             responsive: [
                 {
                     breakpoint: 1200,
