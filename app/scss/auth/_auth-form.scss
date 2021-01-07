@@ -8,6 +8,7 @@
         display: block;
         text-align: left;
         margin-bottom: 25px;
+        cursor: pointer;
 
         &--checkbox {
             margin-bottom: 0;
@@ -38,7 +39,6 @@
 
             &:focus {
                 outline-color: transparent;
-
             }
         }
     }
