@@ -28,21 +28,6 @@
         position: relative;
         flex-wrap: wrap;
     }
-
-    &--active {
-        &::after {
-            @include medium {
-                position: absolute;
-                content: '';
-                background-color: #cce2ed;
-                top: 0;
-                right: 0;
-                bottom: -81vh;
-                left: 0;
-                z-index: 1;
-            }
-        }
-    }
 }
 
 .menu {
@@ -52,6 +37,19 @@
     @include medium {
         display: none;
         text-align: center;
+        position: relative;
+
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: $body-color;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: -60px;
+            z-index: -1;
+        }
     }
 
     &__item:not(:last-child) {
@@ -88,6 +86,10 @@
             font-size: 20px;
             line-height: 2;
             padding: 20px 0;
+        }
+
+        @include small {
+            padding: 5px 0;
         }
     }
 

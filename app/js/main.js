@@ -16,12 +16,11 @@ $(function() {
         $("#" + tabId).addClass('tabs__content--active');
     });
 
-    $('.header__inner, menu a, user-nav').on('click', function() {
+    $('.burger-btn').on('click', function() {
 
         $('.burger-btn').toggleClass('burger-btn--active');
         $('.menu').toggleClass('menu--active');
         $('.user-nav').toggleClass('user-nav--active');
-        $('.header').toggleClass('header--active');
     });
 
     $('.filter__range-input').ionRangeSlider({
@@ -117,6 +116,10 @@ $(function() {
         slidesToScroll: 1,
         prevArrow: '<button class="slick-prev" type="button"><img src="images/icons/slider-arrow-left.svg" alt="arrow-left"></button>',
         nextArrow: '<button class="slick-next" type="button"><img src="images/icons/slider-arrow-right.svg" alt="arrow-right"></button>',
+    });
+
+    $('.catalog__btn--filter').on('click', function() {
+        $('.catalog__filters').toggleClass('catalog__filters--active');
     });
 
 });
