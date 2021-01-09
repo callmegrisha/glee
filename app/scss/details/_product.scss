@@ -2,15 +2,33 @@
     padding: 120px 0 60px;
     @extend %rubik-regular;
 
+    @include mobile {
+        padding: 30px 0 30px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
+
+        @include medium {
+            align-items: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
     }
 
     &__description {
         padding: 30px 0;
         color: $accent-color;
+
+        @include mobile {
+            padding: 0;
+            text-align: center;
+        }
     }
 
     &__name {
@@ -18,22 +36,42 @@
         font-size: 40px;
         margin-bottom: 25px;
         color: #333333;
+
+        @include mobile {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
     }
 
     &__rate {
         padding: 0;
         margin-bottom: 35px;
+
+        @include mobile {
+            margin: 0 auto 15px;
+        }
     }
 
     &__text {
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 35px;
+
+        @include mobile {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
     }
 
     &__form {
         display: flex;
         margin-bottom: 55px;
+
+        @include mobile {
+            justify-content: center;
+            margin-bottom: 15px;
+        }
     }
 
     &__num {
@@ -95,6 +133,10 @@
         &:active {
             @extend %outline;
         }
+
+        @include medium {
+            padding: 10px 20px;
+        }
     }
 
     &__list {
@@ -109,6 +151,10 @@
 
     ul.tabs {
         margin-bottom: 35px;
+
+        @include medium {
+            flex-wrap: wrap;
+        }
     }
 
     .tabs__item {
@@ -117,8 +163,16 @@
         color: $accent-color;
         transition: background-color 0.3s;
 
+        @include small {
+            padding: 15px 40px;
+        }
+
         &:not(:last-child) {
             margin-right: 13px;
+
+            @include small {
+                margin-right: 0;
+            }
         }
 
         &:hover {
@@ -129,6 +183,10 @@
         &--active {
             color: $body-color;
             background-color: $btn-color;
+        }
+
+        @include medium {
+            margin-bottom: 15px;
         }
     }
 

@@ -3,6 +3,11 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include medium {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     &__input,
     &__text {
         border: 1px solid #e5e5e5;
@@ -13,7 +18,11 @@
         height: 50px;
         margin-bottom: 20px;
         padding: 20px;
+        background-position: 95% 50%;
 
+        @include medium {
+            width: 100%;
+        }
 
         &:focus {
             outline: 1px solid $accent-color;
@@ -28,14 +37,17 @@
             background-image: url('../images/icons/input-user.svg');
             background-repeat: no-repeat;
             background-size: 20px 40px;
-            background-position: 360px 50%;
+
+
+            @include medium {
+                margin-right: 0;
+            }
         }
 
         &--email {
             background-image: url('../images/icons/input-letter.svg');
             background-repeat: no-repeat;
             background-size: 20px 40px;
-            background-position: 360px 50%;
         }
 
         &::placeholder {
@@ -53,7 +65,7 @@
         background-image: url('../images/icons/input-message.svg');
         background-repeat: no-repeat;
         background-size: 20px 40px;
-        background-position: 790px 10%;
+        background-position: 95% 10%;
 
 
         &:focus {

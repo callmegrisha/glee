@@ -14,17 +14,19 @@
             padding: 50px 0;
         }
 
-        img {
-            max-width: 200px;
-            max-height: 200px;
-            object-fit: cover;
-            margin: 0 auto;
-        }
-
         .slick-slide {
-            padding: 0 20px;
+            padding: 0 50px;
         }
     }
 
+    &__logo {
+        width: 500px;
+
+        img {
+            max-width: 200px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+    }
 
 }

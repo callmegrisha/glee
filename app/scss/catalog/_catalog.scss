@@ -4,18 +4,43 @@
     &__inner {
         display: flex;
         margin-bottom: 100px;
+
+        @include medium {
+            position: relative;
+        }
     }
 
     &__filters {
         max-width: 270px;
         width: 100%;
         margin-right: 60px;
+
+        @include medium {
+            position: absolute;
+            transform: translateX(-500px);
+
+            &--active {
+                transform: translateX(0);
+                transition: transform 0.3s;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    background-color: $body-color;
+                    left: -15px;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+        }
     }
 
     &__view {
-        max-width: 70px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -34,6 +59,14 @@
         &:active {
             fill: $accent-color;
         }
+
+        &--filter {
+            display: none;
+
+            @include medium {
+                display: block;
+            }
+        }
     }
 
     &__grid {
@@ -42,8 +75,17 @@
         flex-wrap: wrap;
         margin: 0 -30px -30px;
 
+        @include medium {
+            justify-content: space-around;
+            margin: 0;
+        }
+
         .product-item {
             margin: 0 30px 30px 0;
+
+            @include mobile {
+                margin-right: 0;
+            }
         }
 
     }

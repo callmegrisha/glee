@@ -8,6 +8,14 @@
         margin-bottom: 30px;
     }
 
+    @include lg {
+        max-width: 600px;
+    }
+
+    @include medium {
+        padding: 30px 0 60px;
+    }
+
     &--reply {
         max-width: 700px;
         width: 100%;
@@ -22,6 +30,10 @@
         height: 100px;
         object-fit: cover;
         margin-right: 30px;
+
+        @include small {
+            margin-right: 10px;
+        }
     }
 
     &__info {
