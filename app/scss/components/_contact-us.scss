@@ -1,6 +1,10 @@
 .contact-us {
     padding: 120px 0;
 
+    @include medium {
+        padding: 60px 0;
+    }
+
     .title {
         margin-bottom: 75px;
 
@@ -18,15 +22,24 @@
         justify-content: space-between;
         text-align: center;
         margin-bottom: 120px;
+
+        @include mobile {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
         max-width: 370px;
         width: 100%;
-        max-height: 380px;
+        min-height: 380px;
         padding: 70px 50px;
         background-color: #fbfbfb;
         border: 3px solid transparent;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
 
         &:hover {
             border-color: $btn-color;
@@ -45,6 +58,16 @@
             font-style: normal;
             color: #565872;
             line-height: 30px;
+        }
+
+        @include medium {
+            padding: 20px;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+            margin-right: 0;
+            max-width: 90%;
         }
 
     }
@@ -68,18 +91,40 @@
 
     &__request {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         .request-form {
             max-width: 630px;
+            margin-right: 40px;
+
+            @include mobile {
+                margin-right: 0;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
 
             &__input {
                 width: 300px;
-                background-position: 260px 50%;
+                background-position: 95% 50%;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+            &__input--name {
+                @include mobile {
+                    margin-right: 0;
+                }
             }
 
             &__text {
-                background-position: 590px 10%;
+                background-position: 98% 10%;
+            }
+
+            &__btn {
+                justify-self: center;
             }
         }
     }

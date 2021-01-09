@@ -3,10 +3,24 @@
     width: 550px;
     margin-right: 70px;
 
+    @include medium {
+        margin-right: 20px;
+    }
+
+    @include mobile {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+
     &__nav {
         width: 138px;
         height: 530px;
         margin-right: 25px;
+
+        @include medium {
+            display: none;
+        }
     }
 
     &__nav-item {
@@ -27,6 +41,10 @@
 
     &__main {
         width: 387px;
+
+        @include medium {
+            width: 300px;
+        }
     }
 
     &__main-item {
@@ -36,6 +54,14 @@
         padding: 63px 77px;
         border: 2px solid #f2f2f2;
         background-color: #fefefe;
+
+        @include medium {
+            height: auto;
+        }
+
+        @include mobile {
+            height: 360px;
+        }
 
         img {
             width: 100%;

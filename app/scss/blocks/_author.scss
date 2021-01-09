@@ -9,6 +9,14 @@
     display: flex;
     justify-content: space-between;
 
+    @include lg {
+        max-width: 600px;
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+
     &__profile {
         max-width: 270px;
         width: 100%;

@@ -1,6 +1,10 @@
 .comments {
     padding: 60px 0 120px;
 
+    @include small {
+        padding: 60px 0 120px;
+    }
+
     &__title {
         font-size: 24px;
         color: $text-color;

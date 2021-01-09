@@ -116,6 +116,33 @@ $(function() {
         slidesToScroll: 1,
         prevArrow: '<button class="slick-prev" type="button"><img src="images/icons/slider-arrow-left.svg" alt="arrow-left"></button>',
         nextArrow: '<button class="slick-next" type="button"><img src="images/icons/slider-arrow-right.svg" alt="arrow-right"></button>',
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 890,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 390,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('.catalog__btn--filter').on('click', function() {
